@@ -1,87 +1,125 @@
-import { Button } from "@/components/ui/button";
-import { Play, Volume2 } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, ArrowDown, Building2, FileText, Gamepad2, CreditCard, Users, Database } from "lucide-react";
 
 const PromoVideo = () => {
   return (
     <section className="py-24 bg-gradient-hero">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center space-y-6 mb-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              See <span className="text-accent">Legacy Bet</span> in Action
+              Operational <span className="text-accent">Structure</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Watch how our platform revolutionizes peer-to-peer betting and prediction markets
+              Strategic flow of operations, intellectual property, and financial services across our subsidiary network
             </p>
           </div>
           
-          {/* Video Player Placeholder */}
-          <div className="relative group">
-            <div className="aspect-video bg-gradient-to-br from-secondary/20 to-primary/20 rounded-2xl border border-primary/30 backdrop-blur-sm overflow-hidden shadow-2xl">
-              {/* Video Thumbnail/Placeholder */}
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-background/10 to-primary/5 relative">
-                {/* Play Button */}
-                <Button 
-                  variant="hero" 
-                  size="lg"
-                  className="w-20 h-20 rounded-full group-hover:scale-110 transition-all duration-300 shadow-2xl"
-                >
-                  <Play className="h-8 w-8 ml-1" fill="currentColor" />
-                </Button>
-                
-                {/* Video Controls Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/80 to-transparent p-6">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                      <div className="text-sm font-medium text-foreground">Legacy Bet Platform Demo</div>
-                      <div className="text-xs text-muted-foreground">3:24</div>
-                    </div>
-                    <Button variant="ghost" size="sm">
-                      <Volume2 className="h-4 w-4" />
-                    </Button>
-                  </div>
-                  
-                  {/* Progress Bar */}
-                  <div className="mt-2 w-full bg-secondary/30 rounded-full h-1">
-                    <div className="bg-accent h-1 rounded-full w-1/3"></div>
-                  </div>
-                </div>
-                
-                {/* Floating UI Elements */}
-                <div className="absolute top-4 left-4 bg-card/80 backdrop-blur-sm border border-border/50 rounded-lg px-3 py-2">
-                  <div className="text-xs text-muted-foreground">Live Demo</div>
-                  <div className="text-sm font-semibold text-accent">$2,847 Volume</div>
-                </div>
-                
-                <div className="absolute top-4 right-4 bg-card/80 backdrop-blur-sm border border-border/50 rounded-lg px-3 py-2">
-                  <div className="text-xs text-muted-foreground">Active Markets</div>
-                  <div className="text-sm font-semibold text-primary">156</div>
-                </div>
-              </div>
+          {/* Corporate Structure Diagram */}
+          <div className="relative">
+            {/* Parent Company */}
+            <div className="flex justify-center mb-8">
+              <Card className="bg-gradient-primary border-primary/50 shadow-glow max-w-md">
+                <CardHeader className="text-center pb-4">
+                  <Building2 className="mx-auto h-8 w-8 text-primary-foreground mb-2" />
+                  <CardTitle className="text-xl text-primary-foreground">L.E.N.D. Holdings, Inc.</CardTitle>
+                  <p className="text-sm text-primary-foreground/80">(DE) • Parent / Board / Investors</p>
+                </CardHeader>
+              </Card>
             </div>
             
-            {/* Video Description */}
-            <div className="mt-8 text-center space-y-4">
-              <h3 className="text-2xl font-semibold">Experience the Future of Betting</h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                See how Legacy Bet's intuitive interface makes it easy to create markets, place bets, 
-                and track your predictions in real-time. No complex processes, just pure innovation.
-              </p>
+            {/* Connection Lines */}
+            <div className="flex justify-center mb-8">
+              <div className="w-px h-12 bg-border"></div>
+            </div>
+            
+            {/* Subsidiaries Grid */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              {/* Legacy IP */}
+              <Card className="group hover:shadow-glow hover:border-primary/50 transition-all duration-300 bg-card/50 backdrop-blur-sm">
+                <CardHeader className="text-center pb-3">
+                  <FileText className="mx-auto h-6 w-6 text-primary mb-2" />
+                  <CardTitle className="text-sm">Legacy IP, Inc.</CardTitle>
+                  <p className="text-xs text-muted-foreground">(NV • IP owner)</p>
+                </CardHeader>
+              </Card>
               
-              <div className="flex flex-wrap gap-4 justify-center pt-4">
-                <div className="flex items-center gap-2 text-sm">
-                  <div className="w-2 h-2 bg-accent rounded-full" />
-                  Real-time trading
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  Smart contract security
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <div className="w-2 h-2 bg-secondary rounded-full" />
-                  Instant payouts
-                </div>
-              </div>
+              {/* Legacy Battle Ops */}
+              <Card className="group hover:shadow-glow hover:border-primary/50 transition-all duration-300 bg-card/50 backdrop-blur-sm">
+                <CardHeader className="text-center pb-3">
+                  <Gamepad2 className="mx-auto h-6 w-6 text-primary mb-2" />
+                  <CardTitle className="text-sm">Legacy Battle Ops, LLC</CardTitle>
+                  <p className="text-xs text-muted-foreground">(NV • Customer app)</p>
+                </CardHeader>
+              </Card>
+              
+              {/* Nexionics Services */}
+              <Card className="group hover:shadow-glow hover:border-primary/50 transition-all duration-300 bg-card/50 backdrop-blur-sm">
+                <CardHeader className="text-center pb-3">
+                  <Building2 className="mx-auto h-6 w-6 text-primary mb-2" />
+                  <CardTitle className="text-sm">Nexionics Services LLC</CardTitle>
+                  <p className="text-xs text-muted-foreground">(DE→CA • Services)</p>
+                </CardHeader>
+              </Card>
+              
+              {/* L.E.N.D. Payments */}
+              <Card className="group hover:shadow-glow hover:border-primary/50 transition-all duration-300 bg-card/50 backdrop-blur-sm">
+                <CardHeader className="text-center pb-3">
+                  <CreditCard className="mx-auto h-6 w-6 text-primary mb-2" />
+                  <CardTitle className="text-sm">L.E.N.D. Payments LLC</CardTitle>
+                  <p className="text-xs text-muted-foreground">(DE/NV • Payments)</p>
+                </CardHeader>
+              </Card>
+            </div>
+            
+            {/* Data Entity */}
+            <div className="flex justify-center mb-8">
+              <Card className="bg-secondary/20 border-accent/50 max-w-sm">
+                <CardHeader className="text-center pb-4">
+                  <Database className="mx-auto h-6 w-6 text-accent mb-2" />
+                  <CardTitle className="text-sm">L.E.N.D. Data LLC</CardTitle>
+                  <p className="text-xs text-muted-foreground">(DE • Privacy/PII)</p>
+                </CardHeader>
+              </Card>
+            </div>
+            
+            {/* Operational Flows */}
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="bg-card/30 backdrop-blur-sm border-border/50">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <FileText className="h-5 w-5 text-accent" />
+                    <span className="font-semibold">IP Licensing</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Royalty-based licensing from Legacy IP to operating subsidiaries
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-card/30 backdrop-blur-sm border-border/50">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Users className="h-5 w-5 text-primary" />
+                    <span className="font-semibold">User Transactions</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Customer interactions flow through Battle Ops to payment processing
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-card/30 backdrop-blur-sm border-border/50">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Database className="h-5 w-5 text-accent" />
+                    <span className="font-semibold">Data Protection</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Privacy compliance and data processing agreements managed centrally
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
