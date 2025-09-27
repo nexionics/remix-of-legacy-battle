@@ -56,7 +56,7 @@ const Features = () => {
       <div className="container mx-auto px-4">
         {/* Features Section */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-heading text-4xl md:text-5xl">
             Platform <span className="text-destructive">Features</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -94,7 +94,7 @@ const Features = () => {
 
         {/* Rank Progression */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-heading text-4xl md:text-5xl">
             Rank <span className="text-destructive">Progression</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

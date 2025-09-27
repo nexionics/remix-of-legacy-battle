@@ -123,7 +123,7 @@ All colors MUST be HSL format for consistency.
 
   /* Legacy Battle Typography System */
   .font-display {
-    font-family: "Legacy Battle Stencil", "Inter", "SF Pro", sans-serif;
+    font-family: "Orbitron", "Inter", "SF Pro", sans-serif;
   }
 
   .font-body {
@@ -134,16 +134,16 @@ All colors MUST be HSL format for consistency.
 @layer components {
   /* Legacy Battle Typography Classes */
   .typography-heading {
-    font-family: "Legacy Battle Stencil", "Inter", "SF Pro", sans-serif;
-    font-weight: 400;
+    font-family: "Orbitron", "Inter", "SF Pro", sans-serif;
+    font-weight: 800;
     line-height: 110%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 
   .typography-subheading {
-    font-family: "Legacy Battle Stencil", "Inter", "SF Pro", sans-serif;
-    font-weight: 400;
+    font-family: "Orbitron", "Inter", "SF Pro", sans-serif;
+    font-weight: 700;
     line-height: 115%;
     letter-spacing: 0.04em;
     text-transform: uppercase;

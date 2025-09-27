@@ -24,11 +24,11 @@ const Hero = () => {
               </div>
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight">
+            <h1 className="text-heading text-6xl md:text-8xl leading-tight">
               Legacy <span className="text-transparent bg-clip-text bg-gradient-to-r from-destructive to-destructive/70">Battle</span>
             </h1>
             
-            <p className="text-2xl md:text-3xl text-destructive/90 font-semibold">
+            <p className="text-subheading text-2xl md:text-3xl text-destructive/90">
               Build Your Legacy. Challenge Your Rivals.
             </p>
             

@@ -20,7 +20,7 @@ export default {
 		extend: {
 			/* Legacy Battle Typography System */
 			fontFamily: {
-				'display': ['"Legacy Battle Stencil"', '"Inter"', '"SF Pro"', 'sans-serif'],
+				'display': ['"Orbitron"', '"Inter"', '"SF Pro"', 'sans-serif'],
 				'body': ['"Inter"', '"SF Pro"', 'sans-serif'],
 			},
 			
