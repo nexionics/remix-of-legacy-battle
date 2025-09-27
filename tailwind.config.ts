@@ -18,10 +18,24 @@ export default {
 			}
 		},
 		extend: {
-			/* Legacy Battle Typography */
+			/* Legacy Battle Typography System */
 			fontFamily: {
 				'display': ['"Legacy Battle Stencil"', '"Inter"', '"SF Pro"', 'sans-serif'],
 				'body': ['"Inter"', '"SF Pro"', 'sans-serif'],
+			},
+			
+			/* Typography variants for precise control */
+			fontSize: {
+				'heading-xl': ['4rem', { lineHeight: '110%', letterSpacing: '0.05em' }],
+				'heading-lg': ['3rem', { lineHeight: '110%', letterSpacing: '0.05em' }],
+				'heading-md': ['2.25rem', { lineHeight: '110%', letterSpacing: '0.05em' }],
+				'heading-sm': ['1.5rem', { lineHeight: '110%', letterSpacing: '0.05em' }],
+				'subheading-lg': ['1.25rem', { lineHeight: '115%', letterSpacing: '0.04em' }],
+				'subheading-md': ['1.125rem', { lineHeight: '115%', letterSpacing: '0.04em' }],
+				'subheading-sm': ['1rem', { lineHeight: '115%', letterSpacing: '0.04em' }],
+				'body-lg': ['1.125rem', { lineHeight: '140%', letterSpacing: '0em' }],
+				'body-md': ['1rem', { lineHeight: '140%', letterSpacing: '0em' }],
+				'body-sm': ['0.875rem', { lineHeight: '140%', letterSpacing: '0em' }],
 			},
 			
 			/* Legacy Battle Spacing System */
