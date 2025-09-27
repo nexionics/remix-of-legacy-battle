@@ -21,7 +21,13 @@ const Hero = () => {
                 <Trophy className="w-10 h-10 text-brand-red" />
               </div>
               <div className="relative">
-                <div className="relative h-32 w-32 rounded-full overflow-hidden">
+                {/* Flashing light effects */}
+                <div className="absolute inset-0 -m-4">
+                  <div className="absolute inset-0 rounded-full bg-brand-red/30 blur-3xl animate-pulse"></div>
+                  <div className="absolute inset-0 rounded-full bg-brand-red/20 blur-2xl animate-ping"></div>
+                  <div className="absolute inset-0 rounded-full bg-brand-red/10 blur-xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                </div>
+                <div className="relative h-32 w-32 rounded-full overflow-hidden z-20">
                   <span className="absolute inset-0 rounded-full bg-brand-red/20 blur-2xl animate-pulse-glow" aria-hidden="true"></span>
                   <img src={logoNew} alt="Legacy Battle logo - LB circular mark" className="relative h-full w-full object-contain z-10 rounded-full" loading="lazy" />
                 </div>
