@@ -1,83 +1,83 @@
 import { Button } from "@/components/ui/button";
-import { Building2, Shield, TrendingUp } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { Trophy, Zap, Users, Star, Target, Award } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <div 
-        className="absolute inset-0 bg-gradient-hero opacity-90"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay'
-        }}
-      />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background/95 to-destructive/5">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-destructive rounded-full animate-pulse" />
+        <div className="absolute top-40 right-20 w-1 h-1 bg-destructive/60 rounded-full animate-pulse delay-300" />
+        <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-destructive/40 rounded-full animate-pulse delay-700" />
+        <div className="absolute bottom-20 right-1/3 w-1 h-1 bg-destructive/50 rounded-full animate-pulse delay-500" />
+      </div>
       
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-secondary/20 border border-primary/30 rounded-full px-4 py-2 text-sm font-medium backdrop-blur-sm">
-            <Building2 className="w-4 h-4 text-primary" />
-            Delaware Corporation
-          </div>
-          
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              L.E.N.D.
-            </span>
-            <br />
-            <span className="bg-gradient-accent bg-clip-text text-transparent">
-              Holdings, Inc.
-            </span>
-          </h1>
-          
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Strategic technology holding company powering innovative fintech solutions 
-            across gaming, payments, and data services.
-          </p>
-          
-          {/* CTA Section */}
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="space-y-6">
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <Button variant="hero" size="lg" className="group">
-                <Shield className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Corporate Overview
-              </Button>
-              <Button variant="outline" size="lg">
-                <TrendingUp className="mr-2 h-4 w-4" />
-                Portfolio Companies
-              </Button>
+            <div className="flex justify-center mb-6">
+              <div className="relative">
+                <Trophy className="h-16 w-16 text-destructive animate-pulse" />
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-destructive rounded-full flex items-center justify-center">
+                  <Star className="h-3 w-3 text-white" />
+                </div>
+              </div>
             </div>
+            
+            <h1 className="text-6xl md:text-8xl font-bold leading-tight">
+              Legacy <span className="text-transparent bg-clip-text bg-gradient-to-r from-destructive to-destructive/70">Battle</span>
+            </h1>
+            
+            <p className="text-2xl md:text-3xl text-destructive/90 font-semibold">
+              Build Your Legacy. Challenge Your Rivals.
+            </p>
+            
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              The world's premier skill-challenge platform where legends are made. Issue challenges, 
+              accept duels, spectate epic battles, and climb the ranks from Challenger to Legend.
+            </p>
           </div>
           
-          {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent">4</div>
-              <div className="text-muted-foreground">Operating Subsidiaries</div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button variant="default" size="lg" className="min-w-[200px] bg-destructive hover:bg-destructive/90">
+              <Zap className="mr-2 h-5 w-5" />
+              Start Your Journey
+            </Button>
+            <Button variant="outline" size="lg" className="min-w-[200px] border-destructive/50 text-destructive hover:bg-destructive/10">
+              <Users className="mr-2 h-5 w-5" />
+              Watch Battles
+            </Button>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-8 border-t border-border/20">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-destructive flex items-center justify-center gap-1">
+                <Target className="h-8 w-8" />
+                Stat
+              </div>
+              <div className="text-sm text-muted-foreground">Duels</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent">Multi-State</div>
-              <div className="text-muted-foreground">Jurisdictions</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-destructive flex items-center justify-center gap-1">
+                <Zap className="h-8 w-8" />
+                Quick
+              </div>
+              <div className="text-sm text-muted-foreground">Picks</div>
             </div>
-            <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent">Fintech</div>
-              <div className="text-muted-foreground">Innovation Focus</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-destructive">BC</div>
+              <div className="text-sm text-muted-foreground">Battle Coins</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-destructive flex items-center justify-center gap-1">
+                <Award className="h-8 w-8" />
+                Legend
+              </div>
+              <div className="text-sm text-muted-foreground">Status</div>
             </div>
           </div>
         </div>
       </div>
-      
-      {/* Floating elements */}
-      <div className="absolute top-20 left-10 w-16 h-16 bg-primary/20 rounded-full blur-xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-24 h-24 bg-accent/20 rounded-full blur-xl animate-float" style={{animationDelay: '1s'}} />
-      <div className="absolute top-1/2 left-20 w-8 h-8 bg-secondary/30 rounded-full blur-sm animate-float" style={{animationDelay: '2s'}} />
     </section>
   );
 };
