@@ -22,7 +22,8 @@ const Hero = () => {
               </div>
               <div className="relative">
                 <div className="relative h-32 w-32">
-                  <img src={logoNew} alt="Legacy Battle logo - LB circular mark" className="relative h-full w-full object-contain z-10 animate-pulse-glow drop-shadow-2xl" loading="lazy" />
+                  <span className="absolute inset-0 rounded-full bg-brand-red/20 blur-2xl animate-pulse-glow" aria-hidden="true"></span>
+                  <img src={logoNew} alt="Legacy Battle logo - LB circular mark" className="relative h-full w-full object-contain z-10" loading="lazy" />
                 </div>
               </div>
               <div className="w-20 h-20 bg-brand-red/10 rounded-full flex items-center justify-center animate-float border border-brand-red/20" style={{ animationDelay: '0.5s' }}>

@@ -150,8 +150,14 @@ export default {
 					'50%': { transform: 'translateY(-10px)' }
 				},
 				'pulse-glow': {
-					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--brand-red) / 0.3)' },
-					'50%': { boxShadow: '0 0 40px hsl(var(--brand-red) / 0.6)' }
+					'0%, 100%': { 
+						opacity: '0.2',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						opacity: '0.4',
+						transform: 'scale(1.1)'
+					}
 				},
 				'battle-pulse': {
 					'0%, 100%': { 
