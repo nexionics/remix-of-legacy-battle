@@ -34,7 +34,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-subheading text-2xl md:text-3xl text-brand-red/90">
-              Build Your Legacy. Challenge Your Rivals.
+              LEGACIES ARE NOT GIVEN THEY ARE EARNED
             </p>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
