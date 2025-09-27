@@ -21,7 +21,7 @@ const Hero = () => {
                 <Trophy className="w-10 h-10 text-brand-red" />
               </div>
               <div className="relative">
-                <div className="relative h-33 w-33 rounded-full overflow-hidden">
+                <div className="relative h-32 w-32 rounded-full overflow-hidden">
                   <span className="absolute inset-0 rounded-full bg-brand-red/20 blur-2xl animate-pulse-glow" aria-hidden="true"></span>
                   <img src={logoNew} alt="Legacy Battle logo - LB circular mark" className="relative h-full w-full object-contain z-10 rounded-full" loading="lazy" />
                 </div>
