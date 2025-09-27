@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, Zap, Users, Star, Target, Award } from "lucide-react";
-import logo from "@/assets/lb-logo.png";
+import logoMark from "@/assets/lb-logo-mark.png";
 
 const Hero = () => {
   return (
@@ -21,7 +21,9 @@ const Hero = () => {
                 <Trophy className="w-10 h-10 text-brand-red" />
               </div>
               <div className="relative">
-                <img src={logo} alt="Legacy Battle" className="h-32 w-auto animate-pulse-glow drop-shadow-[0_0_20px_rgba(255,79,79,0.4)] relative z-10" />
+                <div className="h-32 w-32 rounded-full overflow-hidden relative z-10">
+                  <img src={logoMark} alt="Legacy Battle logo - LB circular mark" className="h-full w-full object-contain mix-blend-screen opacity-95 animate-pulse-glow" loading="lazy" />
+                </div>
               </div>
               <div className="w-20 h-20 bg-brand-red/10 rounded-full flex items-center justify-center animate-float border border-brand-red/20" style={{ animationDelay: '0.5s' }}>
                 <Star className="w-10 h-10 text-brand-red" />

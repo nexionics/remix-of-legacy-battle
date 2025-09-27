@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/lb-logo.png";
+import logoMark from "@/assets/lb-logo-mark.png";
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Legacy Battle" className="h-8 w-auto" />
+          <div className="h-8 w-8 rounded-full overflow-hidden">
+            <img src={logoMark} alt="Legacy Battle logo - LB circular mark" className="h-full w-full object-contain mix-blend-screen opacity-95" loading="lazy" />
+          </div>
           <span className="text-heading text-xl font-bold">Legacy Battle</span>
         </div>
         
