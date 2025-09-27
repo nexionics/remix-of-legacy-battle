@@ -8,10 +8,10 @@ All colors MUST be HSL format for consistency.
 
 @layer base {
   :root {
-    /* Legacy Battle Brand Colors */
-    --brand-red: 0 100% 50%;              /* #FF0000 */
-    --brand-red-light: 0 100% 65%;        /* #FF4D4D */
-    --brand-red-dark: 0 100% 30%;         /* #990000 */
+    /* Legacy Battle Brand Colors - Updated to match logo */
+    --brand-red: 0 85% 63%;              /* Logo red */
+    --brand-red-light: 0 85% 73%;        /* Lighter logo red */
+    --brand-red-dark: 0 85% 53%;         /* Darker logo red */
     
     /* Background & Surfaces */
     --brand-background: 0 0% 4%;          /* #0A0A0A */
@@ -58,10 +58,10 @@ All colors MUST be HSL format for consistency.
     --input: var(--elevation-1);
     --ring: var(--brand-red-light);
     
-    /* Legacy Battle Custom Tokens */
-    --gradient-primary: linear-gradient(90deg, hsl(var(--brand-red)) 0%, hsl(var(--brand-red-dark)) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-red-light)), hsl(var(--brand-red)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-background)) 0%, hsl(var(--brand-red-dark)) 50%, hsl(var(--brand-background)) 100%);
+    /* Legacy Battle Custom Tokens - Updated to match logo */
+    --gradient-primary: linear-gradient(135deg, hsl(0 85% 63%), hsl(0 85% 73%));
+    --gradient-accent: linear-gradient(135deg, hsl(0 85% 53%), hsl(0 85% 63%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%), hsl(0 85% 63% / 0.1));
     --shadow-glow: 0 0 40px hsl(var(--brand-red) / 0.4);
     --shadow-accent: 0 10px 30px hsl(var(--brand-red-light) / 0.3);
     
