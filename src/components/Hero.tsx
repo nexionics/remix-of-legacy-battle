@@ -21,8 +21,8 @@ const Hero = () => {
                 <Trophy className="w-10 h-10 text-brand-red" />
               </div>
               <div className="relative">
-                <div className="h-32 w-32 rounded-full overflow-hidden relative z-10">
-                  <img src={logoMark} alt="Legacy Battle logo - LB circular mark" className="h-full w-full object-contain mix-blend-screen opacity-95 animate-pulse-glow" loading="lazy" />
+                <div className="h-32 w-32 rounded-full overflow-hidden relative z-10 bg-background">
+                  <img src={logoMark} alt="Legacy Battle logo - LB circular mark" className="h-full w-full object-contain animate-pulse-glow" loading="lazy" />
                 </div>
               </div>
               <div className="w-20 h-20 bg-brand-red/10 rounded-full flex items-center justify-center animate-float border border-brand-red/20" style={{ animationDelay: '0.5s' }}>

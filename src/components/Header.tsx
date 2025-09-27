@@ -6,8 +6,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-full overflow-hidden">
-            <img src={logoMark} alt="Legacy Battle logo - LB circular mark" className="h-full w-full object-contain mix-blend-screen opacity-95" loading="lazy" />
+          <div className="h-8 w-8 rounded-full overflow-hidden bg-background">
+            <img src={logoMark} alt="Legacy Battle logo - LB circular mark" className="h-full w-full object-contain" loading="lazy" />
           </div>
           <span className="text-heading text-xl font-bold">Legacy Battle</span>
         </div>
