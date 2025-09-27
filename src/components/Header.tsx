@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
-import logoTransparent from "@/assets/lb-logo-transparent.png";
+import logoTransparent from "@/assets/lb-logo-halo.png";
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <img src={logoTransparent} alt="Legacy Battle logo - LB circular mark" className="h-8 w-8 object-contain" loading="lazy" />
+          <div className="relative h-8 w-8">
+            <span className="absolute inset-0 rounded-full bg-brand-red/15 blur-[6px]" aria-hidden="true"></span>
+            <img src={logoTransparent} alt="Legacy Battle logo - LB circular mark" className="relative h-8 w-8 object-contain" loading="lazy" />
+          </div>
           <span className="text-heading text-xl font-bold">Legacy Battle</span>
         </div>
         
