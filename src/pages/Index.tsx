@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import SocialProof from "@/components/SocialProof";
 import Features from "@/components/Features";
 import PromoVideo from "@/components/PromoVideo";
 import CTA from "@/components/CTA";
@@ -9,6 +10,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <SocialProof />
       <Features />
       <PromoVideo />
       <CTA />
