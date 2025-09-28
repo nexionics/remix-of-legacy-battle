@@ -42,7 +42,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-subheading text-2xl md:text-3xl text-brand-red/90">
-              LEGACIES ARE NOT GIVEN THEY ARE EARNED
+              A Legacy isn&apos;t given — it&apos;s earned.
             </p>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
