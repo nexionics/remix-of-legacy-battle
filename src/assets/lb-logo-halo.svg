@@ -1,17 +1,17 @@
 <!-- Legacy Battle — Halo + LB Monogram (transparent SVG) -->
 <svg width="320" height="320" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Legacy Battle logo">
   <defs>
-    <!-- Core Reds -->
+    <!-- Core Reds - using design system tokens -->
     <linearGradient id="lbRed" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"  stop-color="#FF4D4D"/>
-      <stop offset="60%" stop-color="#FF0000"/>
-      <stop offset="100%" stop-color="#990000"/>
+      <stop offset="0%"  stop-color="hsl(0, 85%, 73%)"/>
+      <stop offset="60%" stop-color="hsl(0, 85%, 63%)"/>
+      <stop offset="100%" stop-color="hsl(0, 85%, 53%)"/>
     </linearGradient>
 
     <!-- Outer glow for the halo -->
     <radialGradient id="haloGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="65%" stop-color="#FF3030" stop-opacity="0.75"/>
-      <stop offset="85%" stop-color="#FF0000" stop-opacity="0.35"/>
+      <stop offset="65%" stop-color="hsl(0, 85%, 63%)" stop-opacity="0.75"/>
+      <stop offset="85%" stop-color="hsl(0, 85%, 53%)" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 

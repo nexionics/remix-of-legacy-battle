@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, Zap, Users, Star, Target, Award } from "lucide-react";
-import logoNew from "@/assets/lb-logo-new.png";
+import heroLockup from "@/assets/lb-logo-hero-lockup.svg";
 
 const Hero = () => {
   return (
@@ -16,30 +16,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="space-y-6">
-            <div className="flex justify-center items-center space-x-12 mb-8">
-              <div className="w-20 h-20 bg-brand-red/10 rounded-full flex items-center justify-center animate-float border border-brand-red/20">
-                <Trophy className="w-10 h-10 text-brand-red" />
-              </div>
+            {/* Hero Logo Lockup */}
+            <div className="flex justify-center mb-8">
               <div className="relative">
-                {/* Flashing light effects */}
-                <div className="absolute inset-0 -m-4">
-                  <div className="absolute inset-0 rounded-full bg-brand-red/30 blur-3xl animate-pulse"></div>
-                  <div className="absolute inset-0 rounded-full bg-brand-red/20 blur-2xl animate-ping"></div>
-                  <div className="absolute inset-0 rounded-full bg-brand-red/10 blur-xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                </div>
-                <div className="relative h-32 w-32 rounded-full overflow-hidden z-20">
-                  <span className="absolute inset-0 rounded-full bg-brand-red/20 blur-2xl animate-pulse-glow" aria-hidden="true"></span>
-                  <img src={logoNew} alt="Legacy Battle logo - LB circular mark" className="relative h-full w-full object-contain z-10 rounded-full" loading="lazy" />
-                </div>
-              </div>
-              <div className="w-20 h-20 bg-brand-red/10 rounded-full flex items-center justify-center animate-float border border-brand-red/20" style={{ animationDelay: '0.5s' }}>
-                <Star className="w-10 h-10 text-brand-red" />
+                <img src={heroLockup} alt="Legacy Battle logo lockup" className="w-full max-w-2xl h-auto" loading="lazy" />
               </div>
             </div>
-            
-            <h1 className="text-heading text-6xl md:text-8xl leading-tight">
-              Legacy <span className="text-transparent bg-clip-text bg-gradient-primary">Battle</span>
-            </h1>
             
             <p className="text-subheading text-2xl md:text-3xl text-brand-red/90">
               A Legacy isn&apos;t given — it&apos;s earned.

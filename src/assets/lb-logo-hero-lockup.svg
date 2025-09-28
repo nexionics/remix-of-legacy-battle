@@ -1,17 +1,17 @@
 <!-- Legacy Battle — Hero Lockup (Halo + Wordmark) -->
 <svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Legacy Battle logo lockup">
   <defs>
-    <!-- Brand reds -->
+    <!-- Brand reds - using design system tokens -->
     <linearGradient id="lbRed" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"  stop-color="#FF4D4D"/>
-      <stop offset="60%" stop-color="#FF0000"/>
-      <stop offset="100%" stop-color="#990000"/>
+      <stop offset="0%"  stop-color="hsl(0, 85%, 73%)"/>
+      <stop offset="60%" stop-color="hsl(0, 85%, 63%)"/>
+      <stop offset="100%" stop-color="hsl(0, 85%, 53%)"/>
     </linearGradient>
 
     <!-- Halo glow -->
     <radialGradient id="haloGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="65%" stop-color="#FF3030" stop-opacity="0.72"/>
-      <stop offset="85%" stop-color="#FF0000" stop-opacity="0.35"/>
+      <stop offset="65%" stop-color="hsl(0, 85%, 63%)" stop-opacity="0.72"/>
+      <stop offset="85%" stop-color="hsl(0, 85%, 53%)" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
@@ -38,7 +38,7 @@
     <!-- Shared text style -->
     <style>
       .word {
-        font-family: "Legacy Battle Stencil", "Impact", "Oswald", "Anton", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        font-family: "Orbitron", "Rajdhani", "Saira Extra Condensed", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
         font-weight: 800;
         letter-spacing: 0.06em;
         text-transform: uppercase;
