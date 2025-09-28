@@ -20,6 +20,7 @@ export default {
 		extend: {
 			/* Legacy Battle Typography System */
 			fontFamily: {
+				'legacy': ['"Cinzel"', '"Orbitron"', 'serif'],
 				'display': ['"Orbitron"', '"Inter"', '"SF Pro"', 'sans-serif'],
 				'body': ['"Inter"', '"SF Pro"', 'sans-serif'],
 			},
