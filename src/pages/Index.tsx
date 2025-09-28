@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
+import InteractiveDemo from "@/components/InteractiveDemo";
 import Features from "@/components/Features";
 import PromoVideo from "@/components/PromoVideo";
 import CTA from "@/components/CTA";
@@ -11,6 +12,7 @@ const Index = () => {
       <Header />
       <Hero />
       <SocialProof />
+      <InteractiveDemo />
       <Features />
       <PromoVideo />
       <CTA />
