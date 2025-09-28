@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, Zap, Users, Star, Target, Award } from "lucide-react";
-import legacyBattleLogo from "@/assets/legacy-battle-logo.png";
+import lbHeroLogo from "@/assets/lb-hero-logo.png";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             {/* Hero Logo */}
             <div className="flex justify-center mb-12">
               <div className="relative">
-                <img src={legacyBattleLogo} alt="Legacy Battle logo" className="w-full max-w-4xl h-auto" loading="lazy" />
+                <img src={lbHeroLogo} alt="Legacy Battle logo" className="w-full max-w-4xl h-auto" loading="lazy" />
               </div>
             </div>
             
