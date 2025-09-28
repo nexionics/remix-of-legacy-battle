@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
 import InteractiveDemo from "@/components/InteractiveDemo";
 import MobileExperience from "@/components/MobileExperience";
+import TrustSafety from "@/components/TrustSafety";
 import Features from "@/components/Features";
 import PromoVideo from "@/components/PromoVideo";
 import CTA from "@/components/CTA";
@@ -15,6 +16,7 @@ const Index = () => {
       <SocialProof />
       <InteractiveDemo />
       <MobileExperience />
+      <TrustSafety />
       <Features />
       <PromoVideo />
       <CTA />
