@@ -9,6 +9,7 @@ import ContentHub from "@/components/ContentHub";
 import Features from "@/components/Features";
 import PromoVideo from "@/components/PromoVideo";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <Features />
       <PromoVideo />
       <CTA />
+      <Footer />
     </div>
   );
 };
