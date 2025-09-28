@@ -23,12 +23,20 @@ const Hero = () => {
               </div>
             </div>
             
-            <p className="text-subheading text-2xl md:text-3xl text-brand-red/90">
+            <p className="text-subheading text-2xl md:text-3xl text-brand-red/90 mb-6">
               A Legacy isn&apos;t given — it&apos;s earned.
             </p>
             
+            <div className="flex items-center justify-center gap-2 mb-8">
+              <div className="h-px bg-gradient-to-r from-transparent via-brand-red/40 to-transparent flex-1 max-w-24"></div>
+              <p className="text-lg md:text-xl font-semibold text-foreground px-4 bg-gradient-to-r from-brand-red/20 to-brand-red/10 rounded-full border border-brand-red/30">
+                No House. No Odds. No Gimmicks.
+              </p>
+              <div className="h-px bg-gradient-to-r from-transparent via-brand-red/40 to-transparent flex-1 max-w-24"></div>
+            </div>
+            
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              The world's premier skill-challenge platform where legends are made. Issue challenges, 
+              The world&apos;s premier skill-challenge platform where legends are made. Issue challenges, 
               accept duels, spectate epic battles, and climb the ranks from Challenger to Legend.
             </p>
           </div>
