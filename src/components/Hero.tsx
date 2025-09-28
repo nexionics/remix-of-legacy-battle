@@ -23,13 +23,13 @@ const Hero = () => {
               </div>
             </div>
             
-            <p className="text-subheading text-2xl md:text-3xl text-brand-red/90 mb-6">
+            <p className="text-subheading text-2xl md:text-3xl text-brand-red/90 mb-6 font-legacy">
               A Legacy isn&apos;t given — it&apos;s earned.
             </p>
             
             <div className="flex items-center justify-center gap-2 mb-8">
               <div className="h-px bg-gradient-to-r from-transparent via-brand-red/40 to-transparent flex-1 max-w-24"></div>
-              <p className="text-lg md:text-xl font-semibold text-foreground px-4 bg-gradient-to-r from-brand-red/20 to-brand-red/10 rounded-full border border-brand-red/30">
+              <p className="text-lg md:text-xl font-semibold text-foreground px-4 bg-gradient-to-r from-brand-red/20 to-brand-red/10 rounded-full border border-brand-red/30 font-legacy">
                 No House. No Odds. No Gimmicks.
               </p>
               <div className="h-px bg-gradient-to-r from-transparent via-brand-red/40 to-transparent flex-1 max-w-24"></div>
@@ -54,29 +54,29 @@ const Hero = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-8 border-t border-border/20">
             <div className="text-center">
-              <div className="text-3xl font-bold text-brand-red flex items-center justify-center gap-1">
-                <Target className="h-8 w-8" />
+              <div className="text-2xl font-bold text-brand-red flex items-center justify-center gap-1 font-legacy">
+                <Target className="h-6 w-6" />
                 Stat
               </div>
-              <div className="text-sm text-muted-foreground">Duels</div>
+              <div className="text-lg text-muted-foreground font-legacy font-semibold">Duels</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-brand-red flex items-center justify-center gap-1">
-                <Zap className="h-8 w-8" />
+              <div className="text-2xl font-bold text-brand-red flex items-center justify-center gap-1 font-legacy">
+                <Zap className="h-6 w-6" />
                 Quick
               </div>
-              <div className="text-sm text-muted-foreground">Picks</div>
+              <div className="text-lg text-muted-foreground font-legacy font-semibold">Picks</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-brand-red">BC</div>
-              <div className="text-sm text-muted-foreground">Battle Coins</div>
+              <div className="text-2xl font-bold text-brand-red font-legacy">BC</div>
+              <div className="text-lg text-muted-foreground font-legacy font-semibold">Battle Coins</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-brand-red flex items-center justify-center gap-1">
-                <Award className="h-8 w-8" />
+              <div className="text-2xl font-bold text-brand-red flex items-center justify-center gap-1 font-legacy">
+                <Award className="h-6 w-6" />
                 Legend
               </div>
-              <div className="text-sm text-muted-foreground">Status</div>
+              <div className="text-lg text-muted-foreground font-legacy font-semibold">Status</div>
             </div>
           </div>
         </div>
