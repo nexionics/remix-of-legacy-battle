@@ -19,7 +19,7 @@ const Hero = () => {
             {/* Hero Logo */}
             <div className="flex justify-center mb-12">
               <div className="relative">
-                <img src={lbHeroLogo} alt="Legacy Battle logo" className="w-full max-w-2xl h-auto mix-blend-screen opacity-95" loading="lazy" />
+                <img src={lbHeroLogo} alt="Legacy Battle logo" className="w-full max-w-2xl h-auto mix-blend-multiply opacity-90" loading="lazy" />
               </div>
             </div>
             
