@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoHalo from "@/assets/lb-logo-halo.svg";
+import logoMark from "@/assets/lb-logo-clean-mark.svg";
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="relative h-10 w-10 flex-shrink-0">
-            <img src={logoHalo} alt="Legacy Battle logo - LB halo monogram" className="h-10 w-10 object-contain" loading="lazy" />
+            <img src={logoMark} alt="Legacy Battle logo mark - LB in circle" className="h-10 w-10 object-contain" loading="lazy" />
           </div>
           <span className="text-foreground text-xl font-legacy font-black tracking-widest uppercase">Legacy Battle</span>
         </div>

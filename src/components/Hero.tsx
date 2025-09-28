@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, Zap, Users, Star, Target, Award } from "lucide-react";
-import heroLockup from "@/assets/lb-logo-hero-lockup.svg";
+import cleanLockup from "@/assets/lb-logo-clean-lockup.svg";
 
 const Hero = () => {
   return (
@@ -17,9 +17,9 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="space-y-6">
             {/* Hero Logo Lockup */}
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-12">
               <div className="relative">
-                <img src={heroLockup} alt="Legacy Battle logo lockup" className="w-full max-w-2xl h-auto" loading="lazy" />
+                <img src={cleanLockup} alt="Legacy Battle logo lockup" className="w-full max-w-3xl h-auto" loading="lazy" />
               </div>
             </div>
             

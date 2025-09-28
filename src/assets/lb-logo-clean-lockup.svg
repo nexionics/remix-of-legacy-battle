@@ -1,0 +1,38 @@
+<!-- Legacy Battle — Clean Lockup (matches reference) -->
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Legacy Battle logo lockup">
+  <defs>
+    <!-- Brand red from design system -->
+    <style>
+      .brand-red { fill: hsl(0, 85%, 63%); }
+      .brand-white { fill: #FFFFFF; }
+      .logo-text {
+        font-family: "Orbitron", "Rajdhani", "Saira Extra Condensed", system-ui, sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <!-- Left: Circle with LB -->
+  <g transform="translate(20,20)">
+    <!-- Red circle -->
+    <circle cx="80" cy="80" r="75" fill="none" stroke="hsl(0, 85%, 63%)" stroke-width="8"/>
+    
+    <!-- LB letters -->
+    <g class="brand-red">
+      <!-- L -->
+      <path d="M35 45 h20 v50 h-35 v-15 h15 z"/>
+      <!-- B -->
+      <path d="M70 45 h30 l8 10 v12 l-8 8 8 10 v12 l-10 10 h-28 V45 z
+               M85 60 v10 h12 l4-3 v-4 l-4-3 h-12 z
+               M85 80 v12 h14 l4-4 v-4 l-4-4 h-14 z"/>
+    </g>
+  </g>
+
+  <!-- Right: Text lockup -->
+  <!-- LEGACY (white) -->
+  <text class="logo-text brand-white" x="200" y="75" font-size="48">LEGACY</text>
+  <!-- BATTLE (red) -->
+  <text class="logo-text brand-red" x="200" y="130" font-size="48">BATTLE</text>
+</svg>

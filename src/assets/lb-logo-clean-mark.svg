@@ -1,0 +1,21 @@
+<!-- Legacy Battle — Clean Mark (circle with LB) -->
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Legacy Battle logo mark">
+  <defs>
+    <style>
+      .brand-red { fill: hsl(0, 85%, 63%); }
+    </style>
+  </defs>
+
+  <!-- Red circle -->
+  <circle cx="80" cy="80" r="75" fill="none" stroke="hsl(0, 85%, 63%)" stroke-width="8"/>
+  
+  <!-- LB letters -->
+  <g class="brand-red">
+    <!-- L -->
+    <path d="M35 45 h20 v50 h-35 v-15 h15 z"/>
+    <!-- B -->
+    <path d="M70 45 h30 l8 10 v12 l-8 8 8 10 v12 l-10 10 h-28 V45 z
+             M85 60 v10 h12 l4-3 v-4 l-4-3 h-12 z
+             M85 80 v12 h14 l4-4 v-4 l-4-4 h-14 z"/>
+  </g>
+</svg>
