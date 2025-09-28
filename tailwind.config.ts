@@ -20,7 +20,7 @@ export default {
 		extend: {
 			/* Legacy Battle Typography System */
 			fontFamily: {
-				'legacy': ['"Saira Extra Condensed"', '"Rajdhani"', '"Orbitron"', 'sans-serif'],
+				'legacy': ['"Orbitron"', '"Rajdhani"', '"Saira Extra Condensed"', 'sans-serif'],
 				'display': ['"Orbitron"', '"Inter"', '"SF Pro"', 'sans-serif'],
 				'body': ['"Inter"', '"SF Pro"', 'sans-serif'],
 			},

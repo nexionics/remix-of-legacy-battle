@@ -9,7 +9,7 @@ const Header = () => {
           <div className="relative h-10 w-10 rounded-full overflow-hidden flex-shrink-0">
             <img src={logoNew} alt="Legacy Battle logo - LB circular mark" className="h-10 w-10 object-contain rounded-full" loading="lazy" />
           </div>
-          <span className="text-foreground text-xl font-legacy font-bold tracking-wider uppercase">Legacy Battle</span>
+          <span className="text-foreground text-xl font-legacy font-black tracking-widest uppercase">Legacy Battle</span>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
