@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import LiveStatistics from "@/components/LiveStatistics";
 import SocialProof from "@/components/SocialProof";
 import InteractiveDemo from "@/components/InteractiveDemo";
 import MobileExperience from "@/components/MobileExperience";
@@ -16,6 +17,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <LiveStatistics />
       <SocialProof />
       <InteractiveDemo />
       <MobileExperience />
