@@ -8,10 +8,10 @@ All colors MUST be HSL format for consistency.
 
 @layer base {
   :root {
-    /* Legacy Battle Brand Colors - Updated to match logo */
-    --brand-red: 0 85% 63%;              /* Logo red */
-    --brand-red-light: 0 85% 73%;        /* Lighter logo red */
-    --brand-red-dark: 0 85% 53%;         /* Darker logo red */
+    /* Legacy Battle Brand Colors - Updated to Mortal Kombat red palette */
+    --brand-red: 0 100% 44%;              /* Primary red #E00000 */
+    --brand-red-light: 0 100% 55%;        /* Highlight rim #FF1A1A */
+    --brand-red-dark: 0 100% 35%;         /* Deep base #B30000 */
     
     /* Background & Surfaces */
     --brand-background: 0 0% 4%;          /* #0A0A0A */
