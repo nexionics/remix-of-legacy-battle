@@ -18,12 +18,12 @@ export default {
 			}
 		},
 		extend: {
-			/* Legacy Battle Typography System */
+			/* Legacy Battle Typography System - ONLY LegacyBattleStencil */
 			fontFamily: {
-				'legacy': ['"Orbitron"', '"Rajdhani"', '"Saira Extra Condensed"', 'sans-serif'],
-				'display': ['"LegacyBattleStencil"', '"Inter"', 'sans-serif'],
-				'body': ['"Inter"', '"SF Pro"', 'sans-serif'],
-				'sans': ['"Inter"', 'system-ui', 'sans-serif'],
+				'legacy': ['"LegacyBattleStencil"'],
+				'display': ['"LegacyBattleStencil"'],
+				'body': ['"LegacyBattleStencil"'],
+				'sans': ['"LegacyBattleStencil"'],
 			},
 			
 			/* Typography variants for precise control */

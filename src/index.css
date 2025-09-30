@@ -121,36 +121,36 @@ All colors MUST be HSL format for consistency.
     outline-offset: 2px;
   }
 
-  /* Legacy Battle Typography System */
+  /* Legacy Battle Typography System - ONLY LegacyBattleStencil */
   .font-display {
-    font-family: "Orbitron", "Inter", "SF Pro", sans-serif;
+    font-family: "LegacyBattleStencil";
   }
 
   .font-body {
-    font-family: "Inter", "SF Pro", sans-serif;
+    font-family: "LegacyBattleStencil";
   }
 }
 
 @layer components {
-  /* Legacy Battle Typography Classes */
+  /* Legacy Battle Typography Classes - ONLY LegacyBattleStencil */
   .typography-heading {
-    font-family: "Orbitron", "Inter", "SF Pro", sans-serif;
-    font-weight: 800;
+    font-family: "LegacyBattleStencil";
+    font-weight: 400;
     line-height: 110%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 
   .typography-subheading {
-    font-family: "Orbitron", "Inter", "SF Pro", sans-serif;
-    font-weight: 700;
+    font-family: "LegacyBattleStencil";
+    font-weight: 400;
     line-height: 115%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
   .typography-body {
-    font-family: "Inter", "SF Pro", sans-serif;
+    font-family: "LegacyBattleStencil";
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0em;
@@ -219,13 +219,11 @@ All colors MUST be HSL format for consistency.
   }
 }
 
-/* Legacy Battle Custom CSS Classes */
-@font-face{
-  font-family:"LegacyBattleStencil";
-  src:
-    url("/assets/fonts/legacy-battle-stencil.woff2") format("woff2"),
-    url("/assets/fonts/legacy-battle-stencil.woff") format("woff");
-  font-weight: 400;
+/* Legacy Battle Stencil Font - The ONLY font */
+@font-face {
+  font-family: "LegacyBattleStencil";
+  src: url("../assets/fonts/usaaf-stencil.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -256,7 +254,7 @@ All colors MUST be HSL format for consistency.
 
 /* Typography */
 .lb-font-display{
-  font-family:"LegacyBattleStencil", "Inter", sans-serif; 
+  font-family:"LegacyBattleStencil"; 
   letter-spacing:.02em;
   font-size:clamp(40px,7vw,92px);
   margin:0 0 .4em;
