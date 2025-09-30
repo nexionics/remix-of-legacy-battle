@@ -218,3 +218,92 @@ All colors MUST be HSL format for consistency.
     border-color: hsl(var(--brand-red) / 0.6);
   }
 }
+
+/* Legacy Battle Custom CSS Classes */
+@font-face{
+  font-family:"LegacyBattleStencil";
+  src:
+    url("/assets/fonts/legacy-battle-stencil.woff2") format("woff2"),
+    url("/assets/fonts/legacy-battle-stencil.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom CSS variables using HSL format for consistency */
+:root{
+  /* Mortal Kombat red palette in HSL */
+  --lb-red-900: 0 100% 22%;     /* #730000 */
+  --lb-red-800: 0 100% 27%;     /* #8C0000 */
+  --lb-red-700: 0 100% 35%;     /* #B30000 */
+  --lb-red-600: 0 100% 40%;     /* #CC0000 */
+  --lb-red-500: 0 100% 44%;     /* #E00000 */
+  --lb-red-400: 0 100% 55%;     /* #FF1A1A */
+  --lb-red-300: 0 100% 65%;     /* #FF4D4D */
+
+  /* Effects */
+  --lb-glow: 0 0 24px rgba(255,26,26,.35), 0 0 48px rgba(179,0,0,.25);
+
+  /* Gradients */
+  --lb-grad-red: linear-gradient(135deg, var(--lb-red-700) 0%, var(--lb-red-500) 55%, var(--lb-red-400) 100%);
+  --lb-grad-rim: radial-gradient(70% 70% at 50% 35%, rgba(255,26,26,.45) 0%, rgba(255,26,26,.12) 40%, rgba(255,26,26,0) 70%);
+
+  /* Radii & spacing */
+  --lb-radius: 14px;
+  --lb-radius-pill: 999px;
+  --lb-gap: clamp(8px, 1vw, 16px);
+}
+
+/* Typography */
+.lb-font-display{
+  font-family:"LegacyBattleStencil", "Inter", sans-serif; 
+  letter-spacing:.02em;
+  font-size:clamp(40px,7vw,92px);
+  margin:0 0 .4em;
+}
+
+/* Buttons */
+.btn{
+  --_pad-y: .9rem; --_pad-x: 1.3rem;
+  display:inline-flex; align-items:center; gap:.6rem; border:1px solid transparent;
+  padding:var(--_pad-y) var(--_pad-x); border-radius:var(--lb-radius-pill);
+  font-weight:700; letter-spacing:.02em; cursor:pointer; transition:.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+.btn-primary{
+  color: #fff; background: var(--lb-grad-red); box-shadow: var(--lb-glow);
+}
+.btn-primary:hover{ 
+  transform: translateY(-1px); 
+  filter:saturate(1.1) brightness(1.03);
+}
+.btn-outline{
+  color:#fff; border-color:hsl(var(--lb-red-500)); background:transparent;
+}
+.btn-outline:hover{ 
+  background: rgba(255,26,26,.08); 
+  box-shadow: var(--lb-glow);
+}
+
+/* Halo logo helper */
+.lb-halo{
+  position:relative; display:inline-grid; place-items:center;
+  width:min(120px, 28vw); aspect-ratio:1/1; border-radius:50%;
+  background: radial-gradient(60% 60% at 50% 45%, rgba(0,0,0,.0) 0%, rgba(0,0,0,.5) 65%, rgba(0,0,0,.9) 100%);
+  isolation:isolate;
+}
+.lb-halo::before{
+  /* outer red rim glow */
+  content:""; position:absolute; inset:-8%; border-radius:50%;
+  background: var(--lb-grad-rim); z-index:-1; filter: blur(6px);
+}
+.lb-halo .lb-rim{
+  position:absolute; inset:0; border-radius:50%;
+  border: 10px solid hsl(var(--lb-red-400));
+  box-shadow: 0 0 0 2px rgba(179,0,0,.25), 0 0 28px rgba(255,26,26,.35) inset;
+}
+.lb-halo svg{ width:68%; height:auto }
+
+/* Utility */
+.text-red{color:hsl(var(--lb-red-400))}

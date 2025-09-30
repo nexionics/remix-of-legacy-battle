@@ -1,85 +1,41 @@
-import { Button } from "@/components/ui/button";
-import { Trophy, Zap, Users, Star, Target, Award } from "lucide-react";
-import lbHeroLogo from "@/assets/lb-hero-logo.png";
-
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-brand-red rounded-full animate-pulse" />
-        <div className="absolute top-40 right-20 w-1 h-1 bg-brand-red/60 rounded-full animate-pulse delay-300" />
-        <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-brand-red/40 rounded-full animate-pulse delay-700" />
-        <div className="absolute bottom-20 right-1/3 w-1 h-1 bg-brand-red/50 rounded-full animate-pulse delay-500" />
+    <section 
+      className="hero" 
+      style={{
+        padding: "clamp(32px,7vw,96px) clamp(16px,4vw,32px)",
+        display: "grid",
+        gridTemplateColumns: "1fr",
+        placeItems: "center",
+        textAlign: "center",
+        gap: "clamp(16px,3vw,28px)"
+      }}
+    >
+      {/* Mark + halo */}
+      <div className="lb-halo" aria-hidden="true">
+        <span className="lb-rim"></span>
+        {/* Inline SVG: LB monogram (fills inherit the theme red) */}
+        <svg viewBox="0 0 100 100" role="img" aria-label="Legacy Battle LB mark">
+          <defs>
+            <linearGradient id="lbFill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="hsl(var(--lb-red-700))"/>
+              <stop offset="55%" stopColor="hsl(var(--lb-red-500))"/>
+              <stop offset="100%" stopColor="hsl(var(--lb-red-400))"/>
+            </linearGradient>
+          </defs>
+          {/* "L" */}
+          <path fill="url(#lbFill)" d="M24 20h12v48h26l-8 12H24z"/>
+          {/* "B" (geometric) */}
+          <path fill="url(#lbFill)" d="M60 20h16l8 12-7 10 7 10-8 12H60V20zm12 20 4-6-4-6h-4v12h4zm0 24 4-6-4-6h-4v12h4z"/>
+        </svg>
       </div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto text-center space-y-8">
-          <div className="space-y-6">
-            {/* Hero Logo */}
-            <div className="flex justify-center mb-12">
-              <div className="relative">
-                <img src={lbHeroLogo} alt="Legacy Battle logo" className="w-full max-w-2xl h-auto mix-blend-multiply opacity-90" loading="lazy" />
-              </div>
-            </div>
-            
-            <p className="text-subheading text-2xl md:text-3xl text-brand-red/90 mb-6 font-legacy">
-              A Legacy isn&apos;t given — it&apos;s earned.
-            </p>
-            
-            <div className="flex items-center justify-center gap-2 mb-8">
-              <div className="h-px bg-gradient-to-r from-transparent via-brand-red/40 to-transparent flex-1 max-w-24"></div>
-              <p className="text-lg md:text-xl font-semibold text-foreground px-4 bg-gradient-to-r from-brand-red/20 to-brand-red/10 rounded-full border border-brand-red/30 font-legacy">
-                No House. No Odds. No Gimmicks.
-              </p>
-              <div className="h-px bg-gradient-to-r from-transparent via-brand-red/40 to-transparent flex-1 max-w-24"></div>
-            </div>
-            
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              The world&apos;s premier skill-challenge platform where legends are made. Issue challenges, 
-              accept duels, spectate epic battles, and climb the ranks from Challenger to Legend.
-            </p>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="default" size="lg" className="min-w-[200px] bg-gradient-primary hover:opacity-90 text-white shadow-glow">
-              <Zap className="mr-2 h-5 w-5" />
-              Start Your Journey
-            </Button>
-            <Button variant="outline" size="lg" className="min-w-[200px] border-brand-red text-brand-red hover:bg-brand-red hover:text-white">
-              <Users className="mr-2 h-5 w-5" />
-              Watch Battles
-            </Button>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-8 border-t border-border/20">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-brand-red flex items-center justify-center gap-1 font-legacy">
-                <Target className="h-6 w-6" />
-                Stat
-              </div>
-              <div className="text-lg text-muted-foreground font-legacy font-semibold">Duels</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-brand-red flex items-center justify-center gap-1 font-legacy">
-                <Zap className="h-6 w-6" />
-                Quick
-              </div>
-              <div className="text-lg text-muted-foreground font-legacy font-semibold">Picks</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-brand-red font-legacy">BC</div>
-              <div className="text-lg text-muted-foreground font-legacy font-semibold">Battle Coins</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-brand-red flex items-center justify-center gap-1 font-legacy">
-                <Award className="h-6 w-6" />
-                Legend
-              </div>
-              <div className="text-lg text-muted-foreground font-legacy font-semibold">Status</div>
-            </div>
-          </div>
-        </div>
+
+      <h1 className="lb-font-display">LEGACY <span className="text-red">BATTLE</span></h1>
+      <p>Issue, accept, and spectate skill challenges. <strong>Not a sportsbook.</strong> Battle Coins are virtual credits—<em>not cash</em>.</p>
+
+      <div style={{display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center"}}>
+        <button className="btn btn-primary">Download App</button>
+        <button className="btn btn-outline">How It Works</button>
       </div>
     </section>
   );
