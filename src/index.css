@@ -224,25 +224,30 @@ All colors MUST be HSL format for consistency.
    Drop into Lovable global CSS
    ───────────────────────────────────────────── */
 
-/* 1) Font Faces */
+/* 1. Import your custom Legacy Battle font */
 @font-face {
   font-family: 'LegacyBattleStencil';
-  src: url('/assets/fonts/LegacyBattleStencil-Regular.woff2') format('woff2'),
-       url('/assets/fonts/LegacyBattleStencil-Regular.woff') format('woff'),
-       url('/assets/fonts/LegacyBattleStencil-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('/fonts/LegacyBattleStencil.woff2') format('woff2'),
+       url('/fonts/LegacyBattleStencil.woff') format('woff'),
+       url('/fonts/LegacyBattleStencil.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-@font-face {
-  font-family: 'LegacyBattleStencil';
-  src: url('/assets/fonts/LegacyBattleStencil-Bold.woff2') format('woff2'),
-       url('/assets/fonts/LegacyBattleStencil-Bold.woff') format('woff'),
-       url('/assets/fonts/LegacyBattleStencil-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+/* 2. Apply to logo text */
+.logo-text {
+  font-family: 'LegacyBattleStencil', sans-serif;
+  font-size: 72px;
+  font-weight: normal;
+  color: #FF0000; /* Mortal Kombat red */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  /* Optional shiny finish */
+  background: linear-gradient(180deg, #FF4D4D 0%, #B22222 60%, #800000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255,0,0,0.7), 0 0 20px rgba(255,50,50,0.5);
 }
 
 /* 2) Brand Colors (Mortal Kombat Inspired) */
