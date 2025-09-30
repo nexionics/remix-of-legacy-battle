@@ -30,12 +30,12 @@ const Hero = () => {
         </svg>
       </div>
 
-      <h1 className="lb-font-display">LEGACY <span className="text-red">BATTLE</span></h1>
+      <h1 className="font-display text-white text-6xl">LEGACY <span className="text-lb-red-400">BATTLE</span></h1>
       <p>Issue, accept, and spectate skill challenges. <strong>Not a sportsbook.</strong> Battle Coins are virtual credits—<em>not cash</em>.</p>
 
       <div style={{display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center"}}>
-        <button className="btn btn-primary">Download App</button>
-        <button className="btn btn-outline">How It Works</button>
+        <button className="px-6 py-3 rounded-full text-white shadow-lb-glow bg-lb-grad-red">Download App</button>
+        <button className="px-6 py-3 rounded-full text-white border border-lb-red-500 bg-transparent hover:bg-lb-red-500/10">How It Works</button>
       </div>
     </section>
   );
