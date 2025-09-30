@@ -56,16 +56,16 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				
-				/* Legacy Battle New Color System */
+				/* Mortal Kombat Color System */
 				lb: {
 					red: {
-						900: "#730000",
-						800: "#8C0000", 
-						700: "#B30000",
-						600: "#CC0000",
-						500: "#E00000",
-						400: "#FF1A1A",
-						300: "#FF4D4D",
+						900: "#330000",    /* Deep blood red */
+						800: "#660000",    /* Dark red */
+						700: "#B30000",    /* MK red base */
+						600: "#CC0000",    /* MK red */
+						500: "#FF4500",    /* Fiery orange */
+						400: "#FF6600",    /* Bright orange */
+						300: "#FF7F00",    /* Light orange */
 					},
 					bg: "#0A0A0A",
 					surface: "#141414",
@@ -149,14 +149,14 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-accent': 'var(--gradient-accent)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'lb-grad-red': 'linear-gradient(135deg, #B30000 0%, #E00000 55%, #FF1A1A 100%)'
+				'lb-grad-red': 'linear-gradient(135deg, #B30000 0%, #FF4500 55%, #FF7F00 100%)'
 			},
 			
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
 				'accent': 'var(--shadow-accent)',
 				'focus': 'var(--focus-ring)',
-				'lb-glow': '0 0 24px rgba(255,26,26,.35), 0 0 48px rgba(179,0,0,.25)'
+				'lb-glow': '0 0 24px rgba(255,69,0,.35), 0 0 48px rgba(255,127,0,.25)'
 			},
 			
 			keyframes: {
