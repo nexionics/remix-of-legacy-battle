@@ -1,41 +1,34 @@
+import React from "react";
+import heroHalo from "@/assets/lb-logo-halo.png";
+import "../styles/hero.css";
+
 const Hero = () => {
   return (
-    <section 
-      className="hero" 
-      style={{
-        padding: "clamp(32px,7vw,96px) clamp(16px,4vw,32px)",
-        display: "grid",
-        gridTemplateColumns: "1fr",
-        placeItems: "center",
-        textAlign: "center",
-        gap: "clamp(16px,3vw,28px)"
-      }}
-    >
-      {/* Mark + halo */}
-      <div className="lb-halo" aria-hidden="true">
-        <span className="lb-rim"></span>
-        {/* Inline SVG: LB monogram (fills inherit the theme red) */}
-        <svg viewBox="0 0 100 100" role="img" aria-label="Legacy Battle LB mark">
-          <defs>
-            <linearGradient id="lbFill" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="hsl(var(--lb-red-700))"/>
-              <stop offset="55%" stopColor="hsl(var(--lb-red-500))"/>
-              <stop offset="100%" stopColor="hsl(var(--lb-red-400))"/>
-            </linearGradient>
-          </defs>
-          {/* "L" */}
-          <path fill="url(#lbFill)" d="M24 20h12v48h26l-8 12H24z"/>
-          {/* "B" (geometric) */}
-          <path fill="url(#lbFill)" d="M60 20h16l8 12-7 10 7 10-8 12H60V20zm12 20 4-6-4-6h-4v12h4zm0 24 4-6-4-6h-4v12h4z"/>
-        </svg>
-      </div>
+    <section className="hero" aria-labelledby="hero-title">
+      <div className="hero__brand">
+        <img
+          className="hero__halo"
+          src={heroHalo}
+          width={160}
+          height={160}
+          alt="Legacy Battle halo logo"
+          loading="eager"
+        />
 
-      <h1 className="logo-text">LEGACY BATTLE</h1>
-      <p>Issue, accept, and spectate skill challenges. <strong>Not a sportsbook.</strong> Battle Coins are virtual credits—<em>not cash</em>.</p>
+        <h1 id="hero-title" className="hero__title lb-display">
+          <span className="hero__legacy">LEGACY</span>{" "}
+          <span className="hero__battle">BATTLE</span>
+        </h1>
 
-      <div style={{display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center"}}>
-        <button className="px-6 py-3 rounded-full text-white shadow-lb-glow bg-lb-grad-red">Download App</button>
-        <button className="px-6 py-3 rounded-full text-white border border-lb-red-500 bg-transparent hover:bg-lb-red-500/10">How It Works</button>
+        <p className="hero__tag lb-body">
+          Issue, accept, and spectate skill challenges. <strong>Not a sportsbook.</strong>
+          {" "}Battle Coins are virtual credits—<em>not cash</em>.
+        </p>
+
+        <div className="hero__cta">
+          <a className="btn btn--primary" href="#download">Download App</a>
+          <a className="btn btn--ghost" href="#how">How It Works</a>
+        </div>
       </div>
     </section>
   );
