@@ -21,8 +21,9 @@ export default {
 			/* Legacy Battle Typography System */
 			fontFamily: {
 				'legacy': ['"Orbitron"', '"Rajdhani"', '"Saira Extra Condensed"', 'sans-serif'],
-				'display': ['"Orbitron"', '"Inter"', '"SF Pro"', 'sans-serif'],
+				'display': ['"LegacyBattleStencil"', '"Inter"', 'sans-serif'],
 				'body': ['"Inter"', '"SF Pro"', 'sans-serif'],
+				'sans': ['"Inter"', 'system-ui', 'sans-serif'],
 			},
 			
 			/* Typography variants for precise control */
@@ -54,6 +55,24 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				/* Legacy Battle New Color System */
+				lb: {
+					red: {
+						900: "#730000",
+						800: "#8C0000", 
+						700: "#B30000",
+						600: "#CC0000",
+						500: "#E00000",
+						400: "#FF1A1A",
+						300: "#FF4D4D",
+					},
+					bg: "#0A0A0A",
+					surface: "#141414",
+					border: "#252525",
+					text: "#FFFFFF",
+					text2: "#D0D0D0",
+				},
 				
 				/* Legacy Battle Brand Colors */
 				'brand-red': {
@@ -117,24 +136,27 @@ export default {
 				}
 			},
 			
-			/* Legacy Battle Border Radius - 12px */
+			/* Legacy Battle Border Radius - 14px */
 			borderRadius: {
 				'lg': 'var(--radius)',
 				'md': 'calc(var(--radius) - 2px)',
 				'sm': 'calc(var(--radius) - 4px)',
-				'legacy': '12px'
+				'legacy': '12px',
+				'lgx': '14px'
 			},
 			
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-accent': 'var(--gradient-accent)',
 				'gradient-hero': 'var(--gradient-hero)',
+				'lb-grad-red': 'linear-gradient(135deg, #B30000 0%, #E00000 55%, #FF1A1A 100%)'
 			},
 			
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
 				'accent': 'var(--shadow-accent)',
 				'focus': 'var(--focus-ring)',
+				'lb-glow': '0 0 24px rgba(255,26,26,.35), 0 0 48px rgba(179,0,0,.25)'
 			},
 			
 			keyframes: {
