@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import LiveStatistics from "@/components/LiveStatistics";
 import BattleCoins from "@/components/BattleCoins";
+import HowBattlesWork from "@/components/HowBattlesWork";
 import SocialProof from "@/components/SocialProof";
 import InteractiveDemo from "@/components/InteractiveDemo";
 import MobileExperience from "@/components/MobileExperience";
@@ -20,6 +21,7 @@ const Index = () => {
       <Hero />
       <LiveStatistics />
       <BattleCoins />
+      <HowBattlesWork />
       <SocialProof />
       <InteractiveDemo />
       <MobileExperience />
