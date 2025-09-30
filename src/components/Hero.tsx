@@ -30,7 +30,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <h1 className="font-display text-white text-6xl">LEGACY <span className="text-lb-red-500">BATTLE</span></h1>
+      <h1 className="hero-title">LEGACY <span className="text-red-core">BATTLE</span></h1>
       <p>Issue, accept, and spectate skill challenges. <strong>Not a sportsbook.</strong> Battle Coins are virtual credits—<em>not cash</em>.</p>
 
       <div style={{display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center"}}>

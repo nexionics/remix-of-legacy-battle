@@ -219,89 +219,69 @@ All colors MUST be HSL format for consistency.
   }
 }
 
-/* Legacy Battle Stencil Font - The ONLY font */
+/* ─────────────────────────────────────────────
+   LEGACY BATTLE — Custom Font + Brand Tokens
+   Drop into Lovable global CSS
+   ───────────────────────────────────────────── */
+
+/* 1) Font Faces */
 @font-face {
-  font-family: "LegacyBattleStencil";
-  src: url("../assets/fonts/black-ops-one.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'LegacyBattleStencil';
+  src: url('/assets/fonts/LegacyBattleStencil-Regular.woff2') format('woff2'),
+       url('/assets/fonts/LegacyBattleStencil-Regular.woff') format('woff'),
+       url('/assets/fonts/LegacyBattleStencil-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Custom CSS variables using HSL format for consistency */
-:root{
-  /* Mortal Kombat red palette in HSL */
-  --lb-red-900: 0 100% 22%;     /* #730000 */
-  --lb-red-800: 0 100% 27%;     /* #8C0000 */
-  --lb-red-700: 0 100% 35%;     /* #B30000 */
-  --lb-red-600: 0 100% 40%;     /* #CC0000 */
-  --lb-red-500: 0 100% 44%;     /* #E00000 */
-  --lb-red-400: 0 100% 55%;     /* #FF1A1A */
-  --lb-red-300: 0 100% 65%;     /* #FF4D4D */
-
-  /* Effects */
-  --lb-glow: 0 0 24px rgba(255,26,26,.35), 0 0 48px rgba(179,0,0,.25);
-
-  /* Gradients */
-  --lb-grad-red: linear-gradient(135deg, var(--lb-red-700) 0%, var(--lb-red-500) 55%, var(--lb-red-400) 100%);
-  --lb-grad-rim: radial-gradient(70% 70% at 50% 35%, rgba(255,26,26,.45) 0%, rgba(255,26,26,.12) 40%, rgba(255,26,26,0) 70%);
-
-  /* Radii & spacing */
-  --lb-radius: 14px;
-  --lb-radius-pill: 999px;
-  --lb-gap: clamp(8px, 1vw, 16px);
+@font-face {
+  font-family: 'LegacyBattleStencil';
+  src: url('/assets/fonts/LegacyBattleStencil-Bold.woff2') format('woff2'),
+       url('/assets/fonts/LegacyBattleStencil-Bold.woff') format('woff'),
+       url('/assets/fonts/LegacyBattleStencil-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Typography */
-.lb-font-display{
-  font-family:"LegacyBattleStencil"; 
-  letter-spacing:.02em;
-  font-size:clamp(40px,7vw,92px);
-  margin:0 0 .4em;
+/* 2) Brand Colors (Mortal Kombat Inspired) */
+:root {
+  --lb-red-core: #B22222;     /* Deep Crimson */
+  --lb-red-glow: #FF3030;     /* Ember Glow */
+  --lb-red-shadow: #800000;   /* Dark Depth */
+  --lb-black: #0A0A0A;        /* Arena Background */
+  --lb-white: #FFFFFF;        /* High-Contrast Text */
 }
 
-/* Buttons */
-.btn{
-  --_pad-y: .9rem; --_pad-x: 1.3rem;
-  display:inline-flex; align-items:center; gap:.6rem; border:1px solid transparent;
-  padding:var(--_pad-y) var(--_pad-x); border-radius:var(--lb-radius-pill);
-  font-weight:700; letter-spacing:.02em; cursor:pointer; transition:.2s ease;
-  text-decoration: none;
-  color: inherit;
-}
-.btn-primary{
-  color: #fff; background: var(--lb-grad-red); box-shadow: var(--lb-glow);
-}
-.btn-primary:hover{ 
-  transform: translateY(-1px); 
-  filter:saturate(1.1) brightness(1.03);
-}
-.btn-outline{
-  color:#fff; border-color:hsl(var(--lb-red-500)); background:transparent;
-}
-.btn-outline:hover{ 
-  background: rgba(255,26,26,.08); 
-  box-shadow: var(--lb-glow);
+/* 3) Utility Classes */
+.font-legacy {
+  font-family: 'LegacyBattleStencil', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-/* Halo logo helper */
-.lb-halo{
-  position:relative; display:inline-grid; place-items:center;
-  width:min(120px, 28vw); aspect-ratio:1/1; border-radius:50%;
-  background: radial-gradient(60% 60% at 50% 45%, rgba(0,0,0,.0) 0%, rgba(0,0,0,.5) 65%, rgba(0,0,0,.9) 100%);
-  isolation:isolate;
-}
-.lb-halo::before{
-  /* outer red rim glow */
-  content:""; position:absolute; inset:-8%; border-radius:50%;
-  background: var(--lb-grad-rim); z-index:-1; filter: blur(6px);
-}
-.lb-halo .lb-rim{
-  position:absolute; inset:0; border-radius:50%;
-  border: 10px solid hsl(var(--lb-red-400));
-  box-shadow: 0 0 0 2px rgba(179,0,0,.25), 0 0 28px rgba(255,26,26,.35) inset;
-}
-.lb-halo svg{ width:68%; height:auto }
+.text-red-core   { color: var(--lb-red-core); }
+.text-red-glow   { color: var(--lb-red-glow); }
+.text-red-shadow { color: var(--lb-red-shadow); }
+.text-white      { color: var(--lb-white); }
 
-/* Utility */
-.text-red{color:hsl(var(--lb-red-400))}
+.bg-red-core     { background-color: var(--lb-red-core); }
+.bg-red-glow     { background-color: var(--lb-red-glow); }
+.bg-arena        { background-color: var(--lb-black); }
+
+/* 4) Example Usage */
+.hero-title {
+  font-family: 'LegacyBattleStencil', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--lb-white);
+  text-shadow: 0 0 12px var(--lb-red-glow), 0 0 24px var(--lb-red-core);
+}
+
+.hero-subtitle {
+  font-family: 'LegacyBattleStencil', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--lb-red-core);
+}
