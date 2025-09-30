@@ -222,7 +222,7 @@ All colors MUST be HSL format for consistency.
 /* Legacy Battle Stencil Font - The ONLY font */
 @font-face {
   font-family: "LegacyBattleStencil";
-  src: url("../assets/fonts/usaaf-stencil.ttf") format("truetype");
+  src: url("../assets/fonts/black-ops-one.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
