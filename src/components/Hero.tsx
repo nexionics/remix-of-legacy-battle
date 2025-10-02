@@ -3,16 +3,14 @@ import heroLogo from "@/assets/lb-hero-arena.png";
 
 const Hero = () => {
   return (
-    <section className="relative py-20 px-5">
-      <div className="container max-w-[1120px] mx-auto">
-        <div className="flex flex-col items-center text-center gap-6">
+    <section className="relative py-20">
+      <div className="w-full">
+        <div className="flex flex-col items-center text-center gap-6 px-5">
           <img
             src={heroLogo}
-            width={202}
-            height={202}
+            className="w-full max-w-full h-auto animate-pulse-glow"
             alt="Legacy Battle arena logo with red neon effects"
             loading="eager"
-            className="animate-pulse-glow"
             style={{
               filter: 'drop-shadow(0 0 40px rgba(255,0,0,.6))'
             }}
