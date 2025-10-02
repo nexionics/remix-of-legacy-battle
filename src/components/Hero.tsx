@@ -9,25 +9,29 @@ const Hero = () => {
         <img
           className="hero__halo"
           src={heroHalo}
-          width={160}
-          height={160}
-          alt="Legacy Battle halo logo"
+          width={200}
+          height={200}
+          alt="Legacy Battle halo logo with glowing effects"
           loading="eager"
         />
 
         <h1 id="hero-title" className="hero__title lb-display">
-          <span className="hero__legacy">LEGACY</span>{" "}
+          <span className="hero__legacy">LEGACY</span>
           <span className="hero__battle">BATTLE</span>
         </h1>
 
         <p className="hero__tag lb-body">
-          Issue, accept, and spectate skill challenges. <strong>Not a sportsbook.</strong>
-          {" "}Battle Coins are virtual credits—<em>not cash</em>.
+          The World's Premier Skill-Challenge Platform. Issue Challenges, Accept Duels, Win Glory.
+          {" "}<strong>Not gambling.</strong> Battle Coins are virtual credits—<em>zero cash value</em>.
         </p>
 
         <div className="hero__cta">
-          <a className="btn btn--primary" href="#download">Download App</a>
-          <a className="btn btn--ghost" href="#how">How It Works</a>
+          <a className="btn btn--primary" href="#download">
+            Download Now
+          </a>
+          <a className="btn btn--ghost" href="#how">
+            Watch Demo
+          </a>
         </div>
       </div>
     </section>
