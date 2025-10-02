@@ -5,8 +5,8 @@ const Features = () => {
   const mvpFeatures = [
     {
       icon: Swords,
-      title: "Skill Challenges",
-      description: "Create & accept asynchronous challenges with transparent rules and evidence upload.",
+      title: "Skill Battles",
+      description: "Create & accept asynchronous battles with transparent rules and evidence upload.",
       status: "MVP"
     },
     {
@@ -24,7 +24,7 @@ const Features = () => {
     {
       icon: Wallet,
       title: "Battle Coin Wallet",
-      description: "Virtual credits for boosts/cosmetics and joining eligible challenges. Not cash. Not transferable.",
+      description: "Virtual credits for boosts/cosmetics and joining eligible battles. Not cash. Not transferable.",
       status: "MVP"
     },
     {

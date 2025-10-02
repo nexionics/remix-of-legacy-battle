@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
 
           <p className="font-body text-lg text-text-secondary max-w-[600px]">
-            The skill-challenge network. Create fair challenges, verify results, and build your legacy with your Allies.
+            The skill-battle network. Create fair battles, verify results, and build your legacy with your Allies.
           </p>
 
           <div className="flex flex-wrap gap-3 items-center justify-center">
@@ -34,7 +34,7 @@ const Hero = () => {
               }}
               href="#features"
             >
-              Start a Challenge
+              Start a Battle
             </a>
             <a 
               className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold bg-black border border-[#FF0000] text-white cursor-pointer transition-all hover:translate-y-[-1px]"

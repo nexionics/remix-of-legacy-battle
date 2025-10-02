@@ -81,7 +81,7 @@ const HowBattlesWork = () => {
             
             <p className="font-body text-text-secondary mb-4">
               Buy BC bundles (iOS IAP / web checkout), receive promo/reward drops, and spend on boosts/cosmetics
-              or to join eligible challenges. <strong className="text-text-primary">Bonus</strong> balance always spends first.
+              or to join eligible battles. <strong className="text-text-primary">Bonus</strong> balance always spends first.
             </p>
             
             <div className="grid gap-3">
