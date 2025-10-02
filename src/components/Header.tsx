@@ -18,7 +18,7 @@ const Header = () => {
             <img 
               src={logoLockup}
               alt="Legacy Battle"
-              className="h-14 w-auto"
+              className="h-16 w-auto"
               style={{
                 filter: 'drop-shadow(0 0 12px rgba(255,0,0,.5))'
               }}
