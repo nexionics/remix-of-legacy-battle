@@ -1,5 +1,5 @@
 import React from "react";
-import heroLogo from "@/assets/lb-hero-arena.png";
+import logoLockup from "@/assets/lb-logo-lockup.png";
 
 const Header = () => {
   return (
@@ -14,19 +14,15 @@ const Header = () => {
     >
       <div className="container max-w-[1120px] mx-auto px-5">
         <nav className="flex items-center justify-between py-3.5" aria-label="Primary">
-          <div className="flex items-center gap-3" aria-label="Legacy Battle">
+          <div className="flex items-center" aria-label="Legacy Battle">
             <img 
-              src={heroLogo}
+              src={logoLockup}
               alt="Legacy Battle"
-              className="w-[46px] h-[46px] rounded-full flex-none"
+              className="h-12 w-auto"
               style={{
-                objectFit: 'cover',
                 filter: 'drop-shadow(0 0 12px rgba(255,0,0,.5))'
               }}
             />
-            <div className="font-display font-extrabold text-lg tracking-wide">
-              LEGACY BATTLE
-            </div>
           </div>
           
           <div className="flex gap-4 items-center">

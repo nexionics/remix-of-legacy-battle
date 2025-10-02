@@ -1,5 +1,5 @@
 import React from "react";
-import heroLogo from "@/assets/lb-hero-arena.png";
+import logoLockup from "@/assets/lb-logo-lockup.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,19 +9,15 @@ const Footer = () => {
       <div className="container max-w-[1120px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-text-secondary">
           <div>
-            <div className="flex items-center gap-3 mb-2.5">
+            <div className="flex items-center mb-2.5">
               <img 
-                src={heroLogo}
+                src={logoLockup}
                 alt="Legacy Battle"
-                className="w-[46px] h-[46px] rounded-full flex-none"
+                className="h-12 w-auto"
                 style={{
-                  objectFit: 'cover',
                   filter: 'drop-shadow(0 0 12px rgba(255,0,0,.5))'
                 }}
               />
-              <div className="font-display font-extrabold text-lg tracking-wide text-text-primary">
-                LEGACY BATTLE
-              </div>
             </div>
             <div className="text-sm">
               © {currentYear} Legacy Battle. All rights reserved.
