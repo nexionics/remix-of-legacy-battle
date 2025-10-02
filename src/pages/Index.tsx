@@ -1,36 +1,26 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import LiveStatistics from "@/components/LiveStatistics";
-import BattleCoins from "@/components/BattleCoins";
-import HowBattlesWork from "@/components/HowBattlesWork";
-import SocialProof from "@/components/SocialProof";
-import InteractiveDemo from "@/components/InteractiveDemo";
-import MobileExperience from "@/components/MobileExperience";
-import TrustSafety from "@/components/TrustSafety";
-import GlobalAppeal from "@/components/GlobalAppeal";
-import ContentHub from "@/components/ContentHub";
 import Features from "@/components/Features";
-import PromoVideo from "@/components/PromoVideo";
-import CTA from "@/components/CTA";
+import HowBattlesWork from "@/components/HowBattlesWork";
+import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div 
+      className="min-h-screen font-body"
+      style={{
+        background: 'radial-gradient(1200px 600px at 20% 0%, rgba(255,0,0,0.07), transparent 55%), radial-gradient(900px 500px at 100% 0%, rgba(255,0,0,0.06), transparent 60%), #0A0A0A',
+        color: '#FFFFFF'
+      }}
+    >
       <Header />
-      <Hero />
-      <LiveStatistics />
-      <BattleCoins />
-      <HowBattlesWork />
-      <SocialProof />
-      <InteractiveDemo />
-      <MobileExperience />
-      <TrustSafety />
-      <GlobalAppeal />
-      <ContentHub />
-      <Features />
-      <PromoVideo />
-      <CTA />
+      <main id="main">
+        <Hero />
+        <Features />
+        <HowBattlesWork />
+        <Newsletter />
+      </main>
       <Footer />
     </div>
   );

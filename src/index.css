@@ -8,10 +8,10 @@ All colors MUST be HSL format for consistency.
 
 @layer base {
   :root {
-    /* Mortal Kombat Brand Colors - Fire gradient palette */
-    --brand-red: 14 100% 50%;             /* Fiery orange #FF4500 */
-    --brand-red-light: 25 100% 60%;       /* Bright orange #FF7F00 */
-    --brand-red-dark: 0 100% 35%;         /* Deep red #B30000 */
+    /* Legacy Battle Brand Colors - Pure Red */
+    --brand-red: 0 100% 50%;              /* Pure red #FF0000 */
+    --brand-red-light: 0 100% 65%;        /* Light red #FF4D4D */
+    --brand-red-dark: 0 100% 30%;         /* Deep crimson #990000 */
     
     /* Background & Surfaces */
     --brand-background: 0 0% 4%;          /* #0A0A0A */
@@ -117,42 +117,41 @@ All colors MUST be HSL format for consistency.
 
   /* Focus styles */
   :focus-visible {
-    outline: var(--focus-ring);
+    outline: 2px solid hsl(var(--brand-red-light));
     outline-offset: 2px;
+    border-radius: 8px;
   }
 
-  /* Legacy Battle Typography System - ONLY LegacyBattleStencil */
+  /* Legacy Battle Typography System */
   .font-display {
-    font-family: "LegacyBattleStencil";
+    font-family: "Montserrat", system-ui, sans-serif;
   }
 
   .font-body {
-    font-family: "LegacyBattleStencil";
+    font-family: "Inter", system-ui, sans-serif;
   }
 }
 
 @layer components {
-  /* Legacy Battle Typography Classes - ONLY LegacyBattleStencil */
+  /* Legacy Battle Typography Classes */
   .typography-heading {
-    font-family: "LegacyBattleStencil";
-    font-weight: 400;
-    line-height: 110%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -0.5px;
   }
 
   .typography-subheading {
-    font-family: "LegacyBattleStencil";
-    font-weight: 400;
-    line-height: 115%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0px;
   }
 
   .typography-body {
-    font-family: "LegacyBattleStencil";
+    font-family: "Inter", system-ui, sans-serif;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 145%;
     letter-spacing: 0em;
   }
 

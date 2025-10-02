@@ -1,40 +1,49 @@
-import { Button } from "@/components/ui/button";
-import legacyBattleLogo from "@/assets/legacy-battle-logo.png";
+import React from "react";
+import heroHalo from "@/assets/lb-logo-halo.png";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-surface/95 via-background/90 to-surface/95 backdrop-blur-xl border-b border-accent/20 shadow-lg shadow-primary/10">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="relative h-20 flex-shrink-0 hover-glow">
-            <img src={legacyBattleLogo} alt="Legacy Battle logo" className="h-20 w-auto object-contain transition-all duration-300" loading="lazy" />
+    <header 
+      className="sticky top-0 z-50 border-b"
+      style={{
+        background: 'linear-gradient(180deg, rgba(10,10,10,.9) 0%, rgba(10,10,10,.7) 90%, rgba(10,10,10,0) 100%)',
+        backdropFilter: 'blur(8px)',
+        borderColor: 'rgba(255,255,255,.06)'
+      }}
+      role="banner"
+    >
+      <div className="container max-w-[1120px] mx-auto px-5">
+        <nav className="flex items-center justify-between py-3.5" aria-label="Primary">
+          <div className="flex items-center gap-3" aria-label="Legacy Battle">
+            <div 
+              className="w-11 h-11 rounded-full flex-none"
+              style={{
+                background: `url(${heroHalo}) center/cover no-repeat, radial-gradient(circle at 50% 50%, rgba(255,0,0,.25), rgba(255,0,0,0) 60%)`,
+                boxShadow: '0 0 24px rgba(255,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.08)'
+              }}
+              role="img" 
+              aria-label="Legacy Battle LB glow logo"
+            />
+            <div className="font-display font-extrabold text-lg tracking-wide">
+              LEGACY BATTLE
+            </div>
           </div>
-        </div>
-        
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:glow relative group">
-            <span className="relative z-10">Features</span>
-            <div className="absolute inset-0 bg-primary/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-0"></div>
-          </a>
-          <a href="#battles" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:glow relative group">
-            <span className="relative z-10">Battles</span>
-            <div className="absolute inset-0 bg-primary/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-0"></div>
-          </a>
-          <a href="#ranks" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:glow relative group">
-            <span className="relative z-10">Ranks</span>
-            <div className="absolute inset-0 bg-primary/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-0"></div>
-          </a>
+          
+          <div className="flex gap-4 items-center">
+            <a href="#features" className="px-3 py-2 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors" aria-current="page">
+              Features
+            </a>
+            <a href="#how" className="px-3 py-2 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors">
+              How it works
+            </a>
+            <a href="#wallet" className="px-3 py-2 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors">
+              Battle Coin
+            </a>
+            <a href="#updates" className="px-3 py-2 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors">
+              Updates
+            </a>
+          </div>
         </nav>
-        
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="font-medium hover:bg-primary/10 hover:text-primary transition-all duration-300 border border-transparent hover:border-primary/20">
-            Sign In
-          </Button>
-          <Button variant="glow" size="sm" className="font-medium relative overflow-hidden group">
-            <span className="relative z-10">Join Battle</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-glow to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </Button>
-        </div>
       </div>
     </header>
   );

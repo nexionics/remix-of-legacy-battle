@@ -1,103 +1,98 @@
 import React from "react";
-import "../styles/hero.css";
-import { Swords, Shield, Eye, CheckCircle } from "lucide-react";
 
 const HowBattlesWork = () => {
-  const steps = [
+  const howSteps = [
     {
-      icon: Swords,
-      number: "01",
-      title: "Create Challenge",
-      description: "Select sport, set parameters, choose your challenger. Define stakes and time window."
+      title: "Create or Accept.",
+      description: "Pick a template, set rules, and go live—or join a duel from your feed."
     },
     {
-      icon: Shield,
-      number: "02",
-      title: "Accept or Decline",
-      description: "Review challenge details, verify sources, check history. Accept when ready."
+      title: "Compete & Verify.",
+      description: "Upload proof or wait for official stats. Disputes use 2-of-3 attesters."
     },
     {
-      icon: Eye,
-      number: "03",
-      title: "Live Tracking",
-      description: "Real-time stats from official sources. No manipulation. Complete transparency."
+      title: "Resolve & Share.",
+      description: "Every result includes Resolution Notes and a shareable result card."
     },
     {
-      icon: CheckCircle,
-      number: "04",
-      title: "Auto Resolution",
-      description: "Oracle verifies results instantly. Winners credited automatically. Immutable records."
+      title: "Grow your legacy.",
+      description: "Earn Allies, climb leaderboards (soon), and unlock seasonal events."
     }
   ];
 
+  const battleCoinPoints = [
+    "Balances: Purchased & Bonus",
+    "Referral & sponsor drops (Bonus BC)",
+    "No cash-out. No swaps with cash."
+  ];
+
+  const renderDot = () => (
+    <span 
+      className="w-2.5 h-2.5 rounded-full mt-1.5 flex-none"
+      style={{
+        background: 'radial-gradient(circle at 50% 50%, #FF0000, #990000)',
+        boxShadow: '0 0 12px rgba(255,0,0,.45)'
+      }}
+      aria-hidden="true"
+    />
+  );
+
   return (
-    <section id="how" className="section">
-      <div className="section__inner">
-        <h2 className="section__title">How It Works</h2>
-        <p className="section__sub">
-          Four simple steps from challenge to victory. Transparent, instant, and completely skill-based.
-        </p>
-
-        <div className="grid" style={{ 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '24px'
-        }}>
-          {steps.map((step, index) => {
-            const Icon = step.icon;
-            return (
-              <div key={index} className="card" style={{ position: 'relative', paddingTop: '50px' }}>
-                <div style={{
-                  position: 'absolute',
-                  top: '-20px',
-                  left: '32px',
-                  width: '60px',
-                  height: '60px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, rgba(255,69,0,.2), rgba(179,0,0,.2))',
-                  border: '2px solid rgba(255,69,0,.4)',
-                  boxShadow: '0 8px 24px rgba(255,69,0,.3)'
-                }}>
-                  <Icon size={28} color="#FF4500" />
+    <section id="how" className="py-16 px-5">
+      <div className="container max-w-[1120px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div 
+            className="rounded-xl p-5"
+            style={{
+              background: 'rgba(255,255,255,.02)',
+              border: '1px solid rgba(255,255,255,.06)',
+              boxShadow: '0 0 0 1px rgba(255,255,255,.04), 0 12px 24px rgba(0,0,0,.45)'
+            }}
+          >
+            <h2 className="font-display text-2xl font-bold mb-4 text-text-primary">
+              How it works
+            </h2>
+            
+            <div className="grid gap-3">
+              {howSteps.map((step, index) => (
+                <div key={index} className="flex gap-3 items-start">
+                  {renderDot()}
+                  <div>
+                    <strong className="text-text-primary font-body">{step.title}</strong>
+                    <span className="text-text-secondary font-body"> {step.description}</span>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
 
-                <div style={{
-                  position: 'absolute',
-                  top: '32px',
-                  right: '32px',
-                  fontSize: '48px',
-                  fontFamily: 'LegacyBattleStencil',
-                  fontWeight: '400',
-                  background: 'linear-gradient(135deg, rgba(255,127,0,.3), rgba(255,69,0,.3))',
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  opacity: 0.4
-                }}>
-                  {step.number}
+          <div 
+            id="wallet"
+            className="rounded-xl p-5"
+            style={{
+              background: 'rgba(255,255,255,.02)',
+              border: '1px solid rgba(255,255,255,.06)',
+              boxShadow: '0 0 0 1px rgba(255,255,255,.04), 0 12px 24px rgba(0,0,0,.45)'
+            }}
+          >
+            <h2 className="font-display text-2xl font-bold mb-4 text-text-primary">
+              Battle Coin at launch
+            </h2>
+            
+            <p className="font-body text-text-secondary mb-4">
+              Buy BC bundles (iOS IAP / web checkout), receive promo/reward drops, and spend on boosts/cosmetics
+              or to join eligible challenges. <strong className="text-text-primary">Bonus</strong> balance always spends first.
+            </p>
+            
+            <div className="grid gap-3">
+              {battleCoinPoints.map((point, index) => (
+                <div key={index} className="flex gap-3 items-start">
+                  {renderDot()}
+                  <div className="text-text-secondary font-body">{point}</div>
                 </div>
-
-                <h3 className="lb-display" style={{ 
-                  fontSize: '20px',
-                  margin: '0 0 16px',
-                  color: '#FF7F00',
-                  letterSpacing: '.08em'
-                }}>
-                  {step.title}
-                </h3>
-
-                <p className="lb-body" style={{ 
-                  color: 'rgba(255,255,255,.7)',
-                  fontSize: '16px',
-                  lineHeight: '1.6'
-                }}>
-                  {step.description}
-                </p>
-              </div>
-            );
-          })}
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

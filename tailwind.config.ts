@@ -18,12 +18,11 @@ export default {
 			}
 		},
 		extend: {
-			/* Legacy Battle Typography System - ONLY LegacyBattleStencil */
+			/* Legacy Battle Typography System */
 			fontFamily: {
-				'legacy': ['"LegacyBattleStencil"'],
-				'display': ['"LegacyBattleStencil"'],
-				'body': ['"LegacyBattleStencil"'],
-				'sans': ['"LegacyBattleStencil"'],
+				'display': ['"Montserrat"', 'system-ui', 'sans-serif'],
+				'body': ['"Inter"', 'system-ui', 'sans-serif'],
+				'sans': ['"Inter"', 'system-ui', 'sans-serif'],
 			},
 			
 			/* Typography variants for precise control */
