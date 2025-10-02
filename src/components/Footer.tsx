@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src={heroLogo}
                 alt="Legacy Battle"
-                className="w-11 h-11 rounded-full flex-none"
+                className="w-[46px] h-[46px] rounded-full flex-none"
                 style={{
                   objectFit: 'cover',
                   filter: 'drop-shadow(0 0 12px rgba(255,0,0,.5))'

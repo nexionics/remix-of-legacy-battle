@@ -8,8 +8,8 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center gap-6">
           <img
             src={heroLogo}
-            width={200}
-            height={200}
+            width={202}
+            height={202}
             alt="Legacy Battle arena logo with red neon effects"
             loading="eager"
             className="animate-pulse-glow"
