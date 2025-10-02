@@ -113,6 +113,7 @@ All colors MUST be HSL format for consistency.
     @apply bg-background text-foreground font-body;
     /* Force dark mode for Legacy Battle */
     color-scheme: dark;
+    scroll-behavior: smooth;
   }
 
   /* Focus styles */
