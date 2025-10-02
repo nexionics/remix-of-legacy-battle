@@ -1,5 +1,5 @@
 import React from "react";
-import heroHalo from "@/assets/lb-logo-halo.png";
+import heroLogo from "@/assets/lb-hero-arena.png";
 
 const Header = () => {
   return (
@@ -15,14 +15,14 @@ const Header = () => {
       <div className="container max-w-[1120px] mx-auto px-5">
         <nav className="flex items-center justify-between py-3.5" aria-label="Primary">
           <div className="flex items-center gap-3" aria-label="Legacy Battle">
-            <div 
+            <img 
+              src={heroLogo}
+              alt="Legacy Battle"
               className="w-11 h-11 rounded-full flex-none"
               style={{
-                background: `url(${heroHalo}) center/cover no-repeat, radial-gradient(circle at 50% 50%, rgba(255,0,0,.25), rgba(255,0,0,0) 60%)`,
-                boxShadow: '0 0 24px rgba(255,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.08)'
+                objectFit: 'cover',
+                filter: 'drop-shadow(0 0 12px rgba(255,0,0,.5))'
               }}
-              role="img" 
-              aria-label="Legacy Battle LB glow logo"
             />
             <div className="font-display font-extrabold text-lg tracking-wide">
               LEGACY BATTLE

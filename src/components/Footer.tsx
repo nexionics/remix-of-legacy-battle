@@ -1,5 +1,5 @@
 import React from "react";
-import heroHalo from "@/assets/lb-logo-halo.png";
+import heroLogo from "@/assets/lb-hero-arena.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,14 +10,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-text-secondary">
           <div>
             <div className="flex items-center gap-3 mb-2.5">
-              <div 
+              <img 
+                src={heroLogo}
+                alt="Legacy Battle"
                 className="w-11 h-11 rounded-full flex-none"
                 style={{
-                  background: `url(${heroHalo}) center/cover no-repeat, radial-gradient(circle at 50% 50%, rgba(255,0,0,.25), rgba(255,0,0,0) 60%)`,
-                  boxShadow: '0 0 24px rgba(255,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.08)'
+                  objectFit: 'cover',
+                  filter: 'drop-shadow(0 0 12px rgba(255,0,0,.5))'
                 }}
-                role="img" 
-                aria-label="Legacy Battle LB glow logo"
               />
               <div className="font-display font-extrabold text-lg tracking-wide text-text-primary">
                 LEGACY BATTLE

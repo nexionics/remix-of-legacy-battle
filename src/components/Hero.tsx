@@ -1,5 +1,5 @@
 import React from "react";
-import heroHalo from "@/assets/lb-logo-halo.png";
+import heroLogo from "@/assets/lb-hero-arena.png";
 
 const Hero = () => {
   return (
@@ -7,14 +7,14 @@ const Hero = () => {
       <div className="container max-w-[1120px] mx-auto">
         <div className="flex flex-col items-center text-center gap-6">
           <img
-            src={heroHalo}
-            width={120}
-            height={120}
-            alt="Legacy Battle halo logo with glowing effects"
+            src={heroLogo}
+            width={200}
+            height={200}
+            alt="Legacy Battle arena logo with red neon effects"
             loading="eager"
             className="animate-pulse-glow"
             style={{
-              filter: 'drop-shadow(0 0 24px rgba(255,0,0,.45))'
+              filter: 'drop-shadow(0 0 40px rgba(255,0,0,.6))'
             }}
           />
 
