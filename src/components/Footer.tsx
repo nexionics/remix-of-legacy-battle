@@ -14,7 +14,7 @@ const Footer = () => {
                 <img 
                   src={logoLockup}
                   alt="Legacy Battle logo"
-                  className="h-24 w-auto"
+                  className="h-32 w-auto"
                   style={{
                     filter: 'drop-shadow(0 0 10px rgba(255,0,0,.4))'
                   }}
