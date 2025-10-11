@@ -9,15 +9,17 @@ const Footer = () => {
       <div className="container max-w-[1120px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-text-secondary">
           <div>
-            <div className="flex items-center mb-2.5">
-              <img 
-                src={logoLockup}
-                alt="Legacy Battle"
-                className="h-12 w-auto"
-                style={{
-                  filter: 'drop-shadow(0 0 12px rgba(255,0,0,.5))'
-                }}
-              />
+            <div className="flex items-center mb-4">
+              <a href="#" aria-label="Legacy Battle - Back to top">
+                <img 
+                  src={logoLockup}
+                  alt="Legacy Battle logo"
+                  className="h-16 w-auto"
+                  style={{
+                    filter: 'drop-shadow(0 0 10px rgba(255,0,0,.4))'
+                  }}
+                />
+              </a>
             </div>
             <p className="text-sm">
               © {currentYear} Legacy Battle. All rights reserved.
