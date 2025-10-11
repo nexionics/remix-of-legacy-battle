@@ -35,7 +35,7 @@ const BattleCoins = () => {
     <section id="bc" className="section" style={{ background: 'linear-gradient(180deg, #0a0a0a 0%, #050505 100%)' }}>
       <div className="section__inner">
         <h2 className="section__title flex items-center justify-center gap-4">
-          <img src={bcLogo} alt="Battle Coins" className="w-12 h-12" />
+          <img src={bcLogo} alt="Battle Coins" className="w-16 h-16" />
           Battle Coins
         </h2>
         <p className="section__sub">

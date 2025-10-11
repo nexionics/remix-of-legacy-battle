@@ -77,7 +77,7 @@ const HowBattlesWork = () => {
             }}
           >
             <h2 className="font-display text-2xl font-bold mb-4 text-text-primary flex items-center gap-3">
-              <img src={bcLogo} alt="Battle Coin" className="w-8 h-8" />
+              <img src={bcLogo} alt="Battle Coin" className="w-10 h-10" />
               Battle Coin at launch
             </h2>
             
