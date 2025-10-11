@@ -33,21 +33,21 @@ const Header = () => {
           <div className="hidden md:flex gap-6 items-center">
             <a 
               href="#features" 
-              className="px-3 py-2 rounded-lg text-sm transition-all hover:text-[#FF0000] relative group"
+              className="px-3 py-2 rounded-lg text-base transition-all hover:text-[#FF0000] relative group"
             >
               Features
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all group-hover:w-full"></span>
             </a>
             <a 
               href="#how" 
-              className="px-3 py-2 rounded-lg text-sm transition-all hover:text-[#FF0000] relative group"
+              className="px-3 py-2 rounded-lg text-base transition-all hover:text-[#FF0000] relative group"
             >
               How it works
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all group-hover:w-full"></span>
             </a>
             <a 
               href="#wallet" 
-              className="px-3 py-2 rounded-lg text-sm transition-all hover:text-[#FF0000] relative group flex items-center gap-2"
+              className="px-3 py-2 rounded-lg text-base transition-all hover:text-[#FF0000] relative group flex items-center gap-2"
             >
               <img src={bcLogo} alt="Battle Coin" className="w-5 h-5" />
               Battle Coin
@@ -55,7 +55,7 @@ const Header = () => {
             </a>
             <a 
               href="#updates" 
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold bg-gradient-to-b from-[#FF0000] to-[#990000] text-white border-0 cursor-pointer transition-all hover:translate-y-[-2px] hover:shadow-[0_0_32px_rgba(255,0,0,.45)]"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-base font-semibold bg-gradient-to-b from-[#FF0000] to-[#990000] text-white border-0 cursor-pointer transition-all hover:translate-y-[-2px] hover:shadow-[0_0_32px_rgba(255,0,0,.45)]"
               style={{
                 boxShadow: '0 0 24px rgba(255,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.06)'
               }}
@@ -80,21 +80,21 @@ const Header = () => {
             <div className="flex flex-col gap-2">
               <a 
                 href="#features" 
-                className="px-4 py-3 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors"
+                className="px-4 py-3 rounded-lg text-base hover:bg-[rgba(255,0,0,.12)] transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Features
               </a>
               <a 
                 href="#how" 
-                className="px-4 py-3 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors"
+                className="px-4 py-3 rounded-lg text-base hover:bg-[rgba(255,0,0,.12)] transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 How it works
               </a>
               <a 
                 href="#wallet" 
-                className="px-4 py-3 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors flex items-center gap-2"
+                className="px-4 py-3 rounded-lg text-base hover:bg-[rgba(255,0,0,.12)] transition-colors flex items-center gap-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <img src={bcLogo} alt="Battle Coin" className="w-5 h-5" />
@@ -102,7 +102,7 @@ const Header = () => {
               </a>
               <a 
                 href="#updates" 
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold bg-gradient-to-b from-[#FF0000] to-[#990000] text-white border-0 cursor-pointer mt-2"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-base font-semibold bg-gradient-to-b from-[#FF0000] to-[#990000] text-white border-0 cursor-pointer mt-2"
                 style={{
                   boxShadow: '0 0 24px rgba(255,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.06)'
                 }}
