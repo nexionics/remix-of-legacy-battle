@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/hero.css";
+import bcLogo from "@/assets/bc-logo.png";
 import { Coins, Sparkles, Crown } from "lucide-react";
 
 const BattleCoins = () => {
@@ -33,7 +34,10 @@ const BattleCoins = () => {
   return (
     <section id="bc" className="section" style={{ background: 'linear-gradient(180deg, #0a0a0a 0%, #050505 100%)' }}>
       <div className="section__inner">
-        <h2 className="section__title">Battle Coins</h2>
+        <h2 className="section__title flex items-center justify-center gap-4">
+          <img src={bcLogo} alt="Battle Coins" className="w-12 h-12" />
+          Battle Coins
+        </h2>
         <p className="section__sub">
           Fuel your journey with Battle Coins. Unlock boosts, cosmetics, and premium challenges. 
           {" "}<strong>Not cash. Not transferable. Not gambling.</strong> Pure skill, pure competition.

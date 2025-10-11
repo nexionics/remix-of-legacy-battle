@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logoLockup from "@/assets/lb-logo-lockup.png";
+import bcLogo from "@/assets/bc-logo.png";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -46,8 +47,9 @@ const Header = () => {
             </a>
             <a 
               href="#wallet" 
-              className="px-3 py-2 rounded-lg text-sm transition-all hover:text-[#FF0000] relative group"
+              className="px-3 py-2 rounded-lg text-sm transition-all hover:text-[#FF0000] relative group flex items-center gap-2"
             >
+              <img src={bcLogo} alt="Battle Coin" className="w-5 h-5" />
               Battle Coin
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all group-hover:w-full"></span>
             </a>
@@ -92,9 +94,10 @@ const Header = () => {
               </a>
               <a 
                 href="#wallet" 
-                className="px-4 py-3 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors"
+                className="px-4 py-3 rounded-lg text-sm hover:bg-[rgba(255,0,0,.12)] transition-colors flex items-center gap-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
+                <img src={bcLogo} alt="Battle Coin" className="w-5 h-5" />
                 Battle Coin
               </a>
               <a 

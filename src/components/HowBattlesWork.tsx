@@ -1,4 +1,5 @@
 import React from "react";
+import bcLogo from "@/assets/bc-logo.png";
 
 const HowBattlesWork = () => {
   const howSteps = [
@@ -75,7 +76,8 @@ const HowBattlesWork = () => {
               boxShadow: '0 0 0 1px rgba(255,255,255,.04), 0 12px 24px rgba(0,0,0,.45)'
             }}
           >
-            <h2 className="font-display text-2xl font-bold mb-4 text-text-primary">
+            <h2 className="font-display text-2xl font-bold mb-4 text-text-primary flex items-center gap-3">
+              <img src={bcLogo} alt="Battle Coin" className="w-8 h-8" />
               Battle Coin at launch
             </h2>
             
