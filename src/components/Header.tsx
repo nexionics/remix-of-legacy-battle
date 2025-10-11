@@ -10,9 +10,9 @@ const Header = () => {
     <header 
       className="sticky top-0 z-50 border-b"
       style={{
-        background: 'linear-gradient(180deg, rgba(10,10,10,.95) 0%, rgba(10,10,10,.85) 90%, rgba(10,10,10,0) 100%)',
-        backdropFilter: 'blur(12px)',
-        borderColor: 'rgba(255,255,255,.06)'
+        background: 'linear-gradient(180deg, rgba(10,10,10,.98) 0%, rgba(10,10,10,.92) 90%, rgba(10,10,10,0) 100%)',
+        backdropFilter: 'blur(16px)',
+        borderColor: 'rgba(255,255,255,.08)'
       }}
       role="banner"
     >
@@ -49,7 +49,7 @@ const Header = () => {
               href="#wallet" 
               className="px-3 py-2 rounded-lg text-base transition-all hover:text-[#FF0000] relative group flex items-center gap-2"
             >
-              <img src={bcLogo} alt="Battle Coin" className="w-6 h-6" />
+              <img src={bcLogo} alt="Battle Coin" className="w-6 h-6" style={{ filter: 'drop-shadow(0 0 8px rgba(255,0,0,.4))' }} />
               Battle Coin
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF0000] transition-all group-hover:w-full"></span>
             </a>
@@ -97,7 +97,7 @@ const Header = () => {
                 className="px-4 py-3 rounded-lg text-base hover:bg-[rgba(255,0,0,.12)] transition-colors flex items-center gap-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <img src={bcLogo} alt="Battle Coin" className="w-6 h-6" />
+                <img src={bcLogo} alt="Battle Coin" className="w-6 h-6" style={{ filter: 'drop-shadow(0 0 8px rgba(255,0,0,.4))' }} />
                 Battle Coin
               </a>
               <a 

@@ -115,7 +115,7 @@ const Features = () => {
   };
 
   return (
-    <section id="features" className="py-16 px-5">
+    <section id="features" className="py-24 px-5">
       <div className="container max-w-[1120px] mx-auto">
         <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-text-primary">
           What's in at MVP — and what's next

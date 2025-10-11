@@ -39,7 +39,7 @@ const HowBattlesWork = () => {
   );
 
   return (
-    <section id="how" className="py-16 px-5">
+    <section id="how" className="py-24 px-5">
       <div className="container max-w-[1120px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div 
@@ -77,7 +77,7 @@ const HowBattlesWork = () => {
             }}
           >
             <h2 className="font-display text-2xl font-bold mb-4 text-text-primary flex items-center gap-3">
-              <img src={bcLogo} alt="Battle Coin" className="w-10 h-10" />
+              <img src={bcLogo} alt="Battle Coin logo" className="w-10 h-10" style={{ filter: 'drop-shadow(0 0 10px rgba(255,0,0,.45))' }} />
               Battle Coin at launch
             </h2>
             

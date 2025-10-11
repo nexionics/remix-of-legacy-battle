@@ -19,9 +19,9 @@ const Footer = () => {
                 }}
               />
             </div>
-            <div className="text-sm">
+            <p className="text-sm">
               © {currentYear} Legacy Battle. All rights reserved.
-            </div>
+            </p>
           </div>
 
           <div className="text-sm">

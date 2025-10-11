@@ -35,7 +35,7 @@ const Hero = () => {
               Legacies aren't given—<br />they're earned!
             </h1>
 
-            <p className="font-body text-lg md:text-xl text-text-secondary max-w-[700px]">
+            <p className="font-body text-lg md:text-xl max-w-[700px]" style={{ color: 'rgba(255,255,255,.85)' }}>
               The skill-battle network. Create fair battles, verify results, and build your legacy with your Allies.
             </p>
 
@@ -55,25 +55,30 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-3 items-center justify-center">
+            <div className="flex flex-wrap gap-4 items-center justify-center">
               <a 
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold bg-gradient-to-b from-[#FF0000] to-[#990000] text-white border-0 cursor-pointer transition-all hover:translate-y-[-3px] hover:shadow-[0_0_40px_rgba(255,0,0,.5)] active:translate-y-[-1px]"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl text-lg font-bold bg-gradient-to-b from-[#FF0000] to-[#990000] text-white border-0 cursor-pointer transition-all hover:translate-y-[-3px] hover:shadow-[0_0_48px_rgba(255,0,0,.6)] active:translate-y-[-1px]"
                 style={{
-                  boxShadow: '0 0 24px rgba(255,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.06)'
+                  boxShadow: '0 0 32px rgba(255,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.08)'
                 }}
                 href="#features"
+                aria-label="Start your first battle on Legacy Battle"
               >
                 Start a Battle
               </a>
               <a 
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold bg-black border border-[#FF0000] text-white cursor-pointer transition-all hover:translate-y-[-2px] hover:bg-[rgba(255,0,0,.05)] hover:shadow-[0_0_24px_rgba(255,0,0,.3)]"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl text-lg font-semibold bg-black border-2 border-[#FF0000] text-white cursor-pointer transition-all hover:translate-y-[-2px] hover:bg-[rgba(255,0,0,.08)] hover:shadow-[0_0_32px_rgba(255,0,0,.4)]"
                 style={{
-                  boxShadow: '0 0 0 1px rgba(255,255,255,.04), 0 12px 24px rgba(0,0,0,.45)'
+                  boxShadow: '0 0 0 1px rgba(255,255,255,.06), 0 12px 24px rgba(0,0,0,.45)'
                 }}
-                href="#join"
+                href="#updates"
+                aria-label="Join the Legacy Battle waitlist"
               >
                 Join the Waitlist
               </a>
+            </div>
+            
+            <div className="flex items-center gap-2 mt-2">
               <span 
                 className="inline-block px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide"
                 style={{
@@ -83,7 +88,7 @@ const Hero = () => {
                 }}
                 title="Verified outcomes with allow-listed sources"
               >
-                Verified by Oracle
+                🛡️ Verified by Oracle
               </span>
             </div>
           </div>
